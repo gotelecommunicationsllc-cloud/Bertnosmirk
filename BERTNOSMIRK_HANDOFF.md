@@ -6,12 +6,12 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.2 |
+| **File version** | v1.3 |
 | **Last updated** | 2026-08-26 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
-| **Canonical location** | Claude Project "Bertnosmirk" → `claude/BERTNOSMIRK_HANDOFF.md` (see Q6 — may move to GitHub) |
-| **GitHub mirror** | `github.com/gotelecommunicationsllc-cloud/Bertnosmirk` |
+| **Canonical location** | GitHub — `gotelecommunicationsllc-cloud/Bertnosmirk`, file `BERTNOSMIRK_HANDOFF.md` on `main` (see D6) |
+| **Other copies** | Claude Project "Bertnosmirk" — now a mirror, not the source (see D6) |
 
 ---
 
@@ -75,8 +75,10 @@ populate Sections 1–5 with real project details.
 *This section is the live truth. Rewrite it as things change — do not append here.*
 
 ### Where things stand right now
-- Handoff infrastructure is built **and now lives in GitHub**. The 403-on-push blocker
-  from Session 002 is resolved.
+- Handoff infrastructure is built, version-controlled, and live on GitHub `main`. The
+  403-on-push blocker from Session 002 is resolved.
+- The repo is **public**. Anything written into these files is world-readable, including
+  the owner's email in Section 6.
 - Project substance still not captured. Sections 1, 2, and parts of 5 remain
   `⚠️ NEEDS INPUT`.
 - Working method going forward: Claude Code sessions against the repo, not chat sessions
@@ -88,12 +90,16 @@ populate Sections 1–5 with real project details.
 | `BERTNOSMIRK_HANDOFF.md` | GitHub repo + Claude Project "Bertnosmirk" | This file |
 | `CLAUDE.md` | GitHub repo root | Auto-loaded by Claude Code; points sessions here |
 | `README.md` | GitHub repo root | Usage instructions and raw-link reference |
-| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Populated 2026-08-26 on branch `claude/md-files-github-upload-k5l23p` |
+| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Populated 2026-08-26. Files on `main` and on `claude/md-files-github-upload-k5l23p` (same commit) |
 
 ### Blockers
-- None outstanding. *(Prior blocker — chat sessions cannot push to GitHub, 403 from the
-  git proxy — is resolved: a Claude Code session with the repo in its authorized set
-  pushes normally. That constraint still applies to chat/Cowork sessions.)*
+- **Nothing is blocking work, but nothing can start.** The project has never been
+  described. Q1 is the gate: until someone says what Bertnosmirk is, no agent can do
+  anything beyond maintaining this file.
+
+*(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
+resolved: a Claude Code session with the repo in its authorized set pushes normally.
+That constraint still applies to chat/Cowork sessions.)*
 
 ---
 
@@ -110,6 +116,7 @@ being relitigated.*
 | D3 | Canonical copy lives in the Claude Project; a `.md` export is distributed to other platforms | 2026-08-26 | Project docs persist across Claude sessions; the export covers non-Claude tools |
 | D4 | Mirror the file to GitHub repo `gotelecommunicationsllc-cloud/Bertnosmirk`, with a `CLAUDE.md` that auto-directs Claude Code sessions to it | 2026-08-26 | Gives a raw URL other tools can fetch, version history on the file, and automatic pickup by Claude Code without the user prompting for it |
 | D5 | Use Claude Code sessions (with the repo attached) as the working surface for this project, rather than chat sessions with manual uploads | 2026-08-26 | Claude Code can commit and push directly, so the handoff file updates itself as part of the work instead of requiring a manual re-upload each time |
+| D6 | **Supersedes D3.** GitHub `main` is the canonical copy. The Claude Project copy is demoted to a mirror and should be refreshed from GitHub, never edited independently | 2026-08-26 | Two canonical copies drift. Since D5 makes Claude Code the working surface and it writes to the repo, the repo is the copy that is always current by construction; git also gives per-change history that the Project copy cannot |
 
 ---
 
@@ -152,9 +159,10 @@ Section 4 once it is settled.*
 - [x] Q5 — Confirm the three files landed in the GitHub repo and the Claude GitHub App is
       installed on it — **Resolved 2026-08-26.** Files committed and pushed from a Claude
       Code session; repo access confirmed working.
-- [ ] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
-      mirror? D3 currently says the reverse. Now that Claude Code writes to the repo
-      directly, keeping two "canonical" copies risks drift.
+- [x] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
+      mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
+- [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
+      Making it private later does not un-publish what was already pushed.
 
 ---
 
@@ -180,21 +188,29 @@ on the actual project with everything kept current in the MD files.
 - Cleared the Session 002 blocker: pushing works from a Claude Code session that has the
   repo attached. The 403 was specific to chat/Cowork sessions, which carry no repo
   credentials.
-- Updated this file per Section 9: header bumped to v1.2, Sections 1, 3, 4, and 7 rewritten.
+- Published the same commit to `main`, so the `README.md` raw link resolves and other AI
+  tools can fetch this file by URL.
+- Noted that the repo is **public** (raised as Q7) and that GitHub auto-set the default
+  branch to `claude/md-files-github-upload-k5l23p` rather than `main`.
+- Updated this file per Section 9: header bumped to v1.3, Sections 1, 3, 4, and 7 rewritten.
 
 **Decided:**
-- D5 (see Section 4) — Claude Code is the working surface for this project going forward.
+- D5 — Claude Code is the working surface for this project going forward.
+- D6 — GitHub `main` is canonical; the Claude Project copy is demoted to a mirror.
+  Supersedes D3.
 
 **Left open:**
-- The branch has not been merged into `main`. Until it is, the raw link in `README.md`
-  (which points at `main`) will not resolve.
-- Q1–Q4 and Q6 are unanswered. Every `⚠️ NEEDS INPUT` marker in Sections 1, 2, and 5 is
-  still there — the project's actual substance has never been described to any agent
-  across three sessions.
+- Repo setting: default branch is still `claude/md-files-github-upload-k5l23p`. Changing
+  it to `main` is a repo-settings action the owner has to take in the GitHub web UI.
+- Q1–Q4 and Q7 are unanswered. Every `⚠️ NEEDS INPUT` marker in Sections 1, 2, and 5 is
+  still there — **the project's actual substance has never been described to any agent
+  across three sessions.** Three sessions have now built and refined infrastructure for
+  context that does not yet exist.
 
 **Next agent should:**
 Ask the user Q1 directly — what Bertnosmirk is, what problem it solves, what "done" looks
-like — and write the answer into Sections 1 and 2 before doing any other work.
+like — and write the answer into Sections 1 and 2 before doing any other work. Do not
+build more tooling around this file until that is answered.
 
 ---
 
