@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.3 |
+| **File version** | v1.4 |
 | **Last updated** | 2026-08-26 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -41,10 +41,15 @@ You are picking up an in-progress project. Before you do anything else:
 "done" looks like. Fill this in and every future session starts warm.*
 
 **Current status in one line:** Context infrastructure is complete and version-controlled
-on GitHub; the project's actual substance is still not captured.
+on GitHub; the project's actual substance is still not captured, though the owner's first
+substantive request (Session 004) was about AI-music rights on Suno.
 
 **Single most important next action:** Answer Q1 — what Bertnosmirk actually is — then
 populate Sections 1–5 with real project details.
+
+**Time-sensitive, unrelated to Q1:** Suno's rewritten Terms of Service take effect
+**2026-09-03**. If the owner has Suno tracks made under a paid plan that have not been
+downloaded yet, downloading them before that date is the safe move. See Session 004.
 
 ---
 
@@ -83,6 +88,11 @@ populate Sections 1–5 with real project details.
   `⚠️ NEEDS INPUT`.
 - Working method going forward: Claude Code sessions against the repo, not chat sessions
   with manual file uploads.
+- **New in Session 004:** the owner's first substantive request was a research question
+  about Suno AI — whether a paid subscriber owns the music they generate, and whether
+  those rights end when the subscription ends. That is the only signal to date about what
+  Bertnosmirk might be about. It is a signal, not a definition; Q1 remains open and no
+  agent should assume this is a music project until the owner confirms it (Q8).
 
 ### What exists already
 | Asset | Where it lives | Notes |
@@ -91,11 +101,17 @@ populate Sections 1–5 with real project details.
 | `CLAUDE.md` | GitHub repo root | Auto-loaded by Claude Code; points sessions here |
 | `README.md` | GitHub repo root | Usage instructions and raw-link reference |
 | GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Populated 2026-08-26. Files on `main` and on `claude/md-files-github-upload-k5l23p` (same commit) |
+| Suno rights research | Section 8, Session 004 entry | Findings on ownership, subscription lapse, and the 2026-09-03 terms change |
 
 ### Blockers
 - **Nothing is blocking work, but nothing can start.** The project has never been
   described. Q1 is the gate: until someone says what Bertnosmirk is, no agent can do
-  anything beyond maintaining this file.
+  anything beyond maintaining this file and answering one-off questions.
+- **Research constraint, environment-level:** this session's egress policy returned a
+  hard 403 for `suno.com` and `help.suno.com` (Chromium included — the browser uses the
+  same gateway, so it is not a way around it). The Suno findings below are drawn from web
+  search over those pages plus third-party analyses, **not** from the primary documents.
+  Verify against the live pages before acting on money or contracts.
 
 *(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
 resolved: a Claude Code session with the repo in its authorized set pushes normally.
@@ -163,12 +179,91 @@ Section 4 once it is settled.*
       mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
 - [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
       Making it private later does not un-publish what was already pushed.
+- [ ] Q8 — Is Bertnosmirk a music or AI-music project? The owner's first substantive
+      question (Session 004) was about Suno rights. Confirm or correct this before any
+      agent builds on the assumption.
+- [ ] Q9 — Does the owner hold an active Suno paid plan, and are there tracks in that
+      library made under a paid plan that have not been downloaded yet? If so they should
+      be downloaded before 2026-09-03, when download caps begin applying to the whole back
+      catalogue.
 
 ---
 
 ## 8. SESSION LOG
 
 *Append-only. Newest entry first. Never edit or delete a past entry.*
+
+---
+
+### 2026-08-26 — Session 004
+**Platform:** Claude Code (remote) · **Agent:** Claude
+
+**Asked for:**
+"If I create music using the AI and I have a subscription, do I become the owner of the
+content? Are my rights only valid as long as the subscription is paid for, or do I lose
+my rights to music created while it was subscription-based once the subscription is
+over?" — referencing Suno (https://suno.com/account). Follow-up: use a Chrome browser to
+get the information online.
+
+**Done:**
+- Researched Suno's ownership and subscription-lapse rules. Could not reach `suno.com` or
+  `help.suno.com`: the session's egress gateway returns a hard 403 for both. Confirmed via
+  `curl`, the WebFetch tool, and headless Chromium — the browser routes through the same
+  policy gateway, so it fails identically. Findings therefore come from web search over
+  those pages and third-party legal write-ups, not the primary documents.
+- Findings, current terms (in force through 2026-09-02):
+  - Suno's ToS: for Pro/Premier subscribers, Suno "hereby assigns to you all of its right,
+    title and interest in and to any Output owned by Suno and generated from Submissions
+    made by you through the Service **during the term of your paid-tier subscription**."
+    An assignment is a permanent transfer, not a rental.
+  - Rights therefore vest at the moment of generation and **survive cancellation**.
+    Cancelling does not claw back rights to songs made while paid. What cancelling stops
+    is making *new* commercially-usable songs — anything generated on the free tier is
+    personal, non-commercial, attribution-required.
+  - Subscribing does **not** retroactively license songs made earlier on the free tier.
+  - Suno keeps a non-exclusive, royalty-free, sublicensable licence to use Output to
+    operate, improve and promote the Service. "Ownership" is never exclusive of Suno.
+  - Hard caveat: Suno "makes no representation or warranty that any copyright will vest in
+    any Output." The US Copyright Office generally will not register purely AI-generated
+    audio, so what a subscriber holds is a contractual right good against Suno — not
+    necessarily a copyright enforceable against a third party who copies the track.
+- Findings, new terms effective **2026-09-03** (following the Warner Music Group deal):
+  - The "generated during the term of your paid-tier subscription" limitation is reported
+    to be gone from the assignment clause. Commercial use is instead gated on obtaining a
+    **permitted download** through Suno's approved download system while on a paid plan.
+    Download becomes the gateway to commercial rights.
+  - Download caps begin: Free 7 for life, Pro 20/month, Premier 60/month. The caps apply
+    to the **entire existing library**, not just songs made after that date — pre-2026-09-03
+    songs are not grandfathered into unlimited downloading.
+  - Ownership language is softened: Suno is framed as remaining the author of the audio,
+    with the user granted a perpetual commercial licence rather than "ownership."
+  - Once a permitted download is taken on a paid plan, the commercial rights are described
+    as perpetual and are not undone by later cancelling, downgrading, or exhausting the
+    download allowance.
+- Practical consequence flagged to the owner: the answer to the original question is "yes,
+  rights survive cancellation" under both old and new terms — but under the new terms the
+  right attaches to the download, so undownloaded tracks are the exposure.
+
+**Decided:**
+- No new decisions. Nothing here settles Q1, and this session deliberately did not treat
+  the Suno question as a definition of the project.
+
+**Left open:**
+- Q1–Q4, Q7 unanswered; every `⚠️ NEEDS INPUT` marker in Sections 1, 2 and 5 still stands.
+  Four sessions in, the project has still never been described.
+- New Q8 (is this a music project?) and Q9 (does the owner have undownloaded Suno tracks
+  before the 2026-09-03 cutoff?).
+- The Suno findings are second-hand because of the egress block. A session on a network
+  that can reach suno.com should verify them against the primary terms pages, especially
+  after 2026-09-03 when the new terms are live.
+- Repo default branch is still `claude/md-files-github-upload-k5l23p`, not `main`. Owner
+  action in the GitHub web UI.
+
+**Next agent should:**
+Ask the user Q1 directly — what Bertnosmirk is, what problem it solves, what "done" looks
+like — and write the answer into Sections 1 and 2 before doing any other work. If the
+answer turns out to involve AI music, the Session 004 findings above are the starting
+point rather than something to re-research.
 
 ---
 
