@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.4 |
+| **File version** | v1.5 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -79,6 +79,11 @@ The running order and what each track carries:
 808 sub-bass tuned to rattle a car trunk, dry close-mic'd vocal, strict spoken bar
 delivery, no melody, no autotune, no layering, no sung hooks. Every track ships with an
 Exclude-Styles list enforcing that.
+
+**The name is not the brand.** "Bertnosmirk" is the *unmarked vehicle* — a deliberately
+neutral container for the work. It carries no artist identity and is not a release name.
+Everything that goes out publicly goes out as **H.I.MVelli**. Do not put "Bertnosmirk" on
+a track, a playlist, cover art, or anything a listener would see.
 
 ### Why it exists / the problem it solves
 It is the owner's story told in his own words rather than by someone else, and told
@@ -169,6 +174,7 @@ being relitigated.*
 | D6 | **Supersedes D3.** GitHub `main` is the canonical copy. The Claude Project copy is demoted to a mirror and should be refreshed from GitHub, never edited independently | 2026-08-26 | Two canonical copies drift. Since D5 makes Claude Code the working surface and it writes to the repo, the repo is the copy that is always current by construction; git also gives per-change history that the Project copy cannot |
 | D7 | The Suno commands live as Markdown in `suno/`, one file per track, each self-contained (Style + Exclude + Lyrics together) | 2026-08-27 | Suno is a copy-paste surface with three separate boxes. A file per track with the blocks in paste order means no scrolling and no cross-file jumping mid-generation, which is when mistakes happen |
 | D8 | The repo copy under `suno/` is canonical for the commands; the Claude artifact "Block to Box Sessions" is a convenience mirror | 2026-08-27 | Same reasoning as D6. The artifact has Copy buttons and is nicer to work from, but it is not version-controlled and cannot be diffed. Edit `suno/`, then republish the artifact from it — never the reverse |
+| D9 | "Bertnosmirk" is the unmarked working vehicle, never the public-facing name. All released material carries **H.I.MVelli** | 2026-08-27 | Keeps the workspace name neutral and separate from the artist identity. The name should never appear on a track, playlist, or anything a listener sees |
 
 ---
 
@@ -186,7 +192,7 @@ being relitigated.*
 
 | Term | Meaning |
 |---|---|
-| Bertnosmirk | The repo/project name. Its origin and whether it is meant as the release name is still unconfirmed — see Q8 |
+| Bertnosmirk | The **unmarked vehicle** — the neutral working container for the rap project. Not a release name, not an artist name, never public-facing. See D9 |
 | H.I.MVelli | The artist name the tracks are recorded under; also the Suno persona/voice setting |
 | Handoff file | This document |
 | Style box | Suno's field for the sonic description (instrumentation, mix, delivery, BPM) |
@@ -224,11 +230,15 @@ Section 4 once it is settled.*
       Code session; repo access confirmed working.
 - [x] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
       mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
-- [ ] Q7 — The repo is public. **Now urgent:** the full lyrics are in it as of Session 004,
-      and they are personal and autobiographical. Confirm public is intended. Making the
-      repo private later does not un-publish what was already pushed.
-- [ ] Q8 — Where does the name "Bertnosmirk" come from, and is it the release name, a
-      codename, or unrelated to H.I.MVelli?
+- [ ] Q7 — The repo is public, and **that works against D9.** An unmarked vehicle parked in
+      a public repo under the org `gotelecommunicationsllc-cloud`, containing the owner's
+      email (Section 6) and the full autobiographical lyrics, is not unmarked — the work
+      is already tied to a real business and a real person by anyone who looks. Decide
+      whether the repo goes private. Making it private later does not un-publish what has
+      already been pushed.
+- [x] Q8 — Where does the name "Bertnosmirk" come from, and is it the release name, a
+      codename, or unrelated to H.I.MVelli? — **Resolved 2026-08-27.** It is the unmarked
+      vehicle for the project. Recorded as D9.
 - [ ] Q9 — What happens after the five tracks exist? Distribution, cover art, a release
       anywhere beyond a Suno playlist?
 - [ ] Q10 — Should generated track links / Suno URLs be recorded in this repo as tracks
@@ -263,6 +273,10 @@ finished project the owner has been describing all along.
 - Added a progress checklist to `99-playlist.md` so the next session knows which tracks
   landed.
 - Resolved Q1 and Q2; escalated Q7 (the lyrics are now in a public repo); opened Q8–Q10.
+- Owner then answered Q8 in-session: Bertnosmirk is the *unmarked vehicle* for the rap
+  project. Recorded as D9 and written into Sections 2 and 5. Flagged the consequence —
+  a public repo under the company org, carrying the owner's email and the full lyrics,
+  contradicts the unmarked intent. Folded that into Q7.
 
 **Decided:**
 - D7 — Suno commands live as one self-contained Markdown file per track under `suno/`.
