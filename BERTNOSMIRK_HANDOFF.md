@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.4 |
+| **File version** | v1.5 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -38,19 +38,20 @@ You are picking up an in-progress project. Before you do anything else:
 ## 1. TL;DR — READ THIS IF YOU READ NOTHING ELSE
 
 **First real signal on what this project is (Session 004):** the owner asked for a rap
-track to be produced on suno.com (AI music generation) using the voice of an artist called
-**H.I.MVelli**. That is the first project-substance request in four sessions. It strongly
-suggests Bertnosmirk is a **music / recording-artist project**, but the owner has not
-confirmed that in so many words, so Section 2 stays marked `⚠️ NEEDS INPUT` rather than
-being filled in on an agent's inference.
+track to be produced on suno.com (AI music generation) under the artist name
+**H.I.MVelli**, and confirmed that H.I.MVelli is **the owner's own voice**, already
+registered as a Persona/Voice inside their Suno account. So this is a
+**music / recording-artist project with the owner as the artist**. Section 2 still carries
+`⚠️ NEEDS INPUT` because scope, purpose and definition-of-success have not been stated —
+but the "what is it" question is no longer dark.
 
 **Current status in one line:** First creative deliverable produced — a ready-to-paste
 Suno prompt pack for an aggressive, heavy-808, strict-spoken-bar rap track
 (`suno/HIMVELLI_RAP_TRACK_PROMPT.md`) — but the track itself is unmade because generating
 it requires the owner's Suno account.
 
-**Single most important next action:** Confirm Q1 in one sentence — is Bertnosmirk a music
-project, and is H.I.MVelli the artist? — so Sections 1 and 2 can finally be written.
+**Single most important next action:** Get the owner's answer on scope — is Bertnosmirk one
+track, a project/EP, or the artist operation as a whole? — then write Section 2.
 
 ---
 
@@ -86,8 +87,14 @@ project, and is H.I.MVelli the artist? — so Sections 1 and 2 can finally be wr
   prompt pack (style block, exclude-styles block, lyrics-box vocal-direction header,
   single-paragraph variant, UI settings table, Suno Voices upload steps, and a
   troubleshooting list for when Suno drifts melodic).
-- The rap track has **not** been generated. No lyrics are written either — the prompt pack
-  governs sound and delivery only.
+- **Full lyrics written** (intro / verse 1 / hook / verse 2 / hook / outro, ~32 bars,
+  metaphor-dense, hard-consonant line endings, no profanity in the current draft). They
+  were delivered in-session and are **deliberately NOT in the repo** — see Blockers.
+- The **H.I.MVelli persona already exists in the owner's Suno account**, built from the
+  owner's own voice. The voice-upload step in the prompt pack is therefore already done,
+  and the rights/consent question around uploaded voices is settled.
+- The rap track has **not** been generated. Everything needed to generate it is ready;
+  only the owner can run it.
 - The repo is **public**. Anything written into these files is world-readable, including
   the owner's email in Section 6 and now the creative brief in `suno/`.
 - Project substance still not formally captured. Sections 1, 2, and parts of 5 remain
@@ -110,9 +117,11 @@ project, and is H.I.MVelli the artist? — so Sections 1 and 2 can finally be wr
   selecting the persona, pressing Create, downloading the result) is the owner's to do.
   Agents can produce prompts, lyrics, and instructions; they cannot operate the account.
   Treat this as a standing constraint, not a one-off failure.
-- **The H.I.MVelli voice file** has never been shared with any agent. It exists on the
-  owner's side only.
-- **Q1 is still formally unanswered**, though no longer fully dark — see Section 1.
+- **Public repo vs. unreleased creative work.** The lyrics are held out of the repo on
+  purpose: it is world-readable, so committing unreleased bars publishes them. Awaiting
+  the owner's call (Q7). Do not commit lyrics or unreleased audio until that is answered.
+- **The H.I.MVelli voice file** has never been shared with any agent and does not need to
+  be — the persona is already built inside the owner's Suno account.
 
 *(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
 resolved: a Claude Code session with the repo in its authorized set pushes normally.
@@ -181,10 +190,14 @@ Section 4 once it is settled.*
 - [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
       Making it private later does not un-publish what was already pushed. **Now live, not
       hypothetical:** the Session 004 creative brief is in the public repo.
-- [ ] Q8 — Is Bertnosmirk a music / recording-artist project, and is H.I.MVelli the artist
-      (the owner, or someone the owner works with)? One sentence unlocks Sections 1 and 2.
-- [ ] Q9 — Should lyrics be written for this track, and to what brief (subject, length,
-      hook, explicit or clean)?
+- [x] Q8 — Is Bertnosmirk a music project and is H.I.MVelli the artist? — **Resolved
+      2026-08-27.** Yes; H.I.MVelli is the owner's own voice, already registered as a
+      Persona/Voice in the owner's Suno account.
+- [x] Q9 — Should lyrics be written, and to what brief? — **Resolved 2026-08-27.** Written
+      to the owner's original style brief; clean draft, explicit version offered.
+- [ ] Q11 — Scope: is Bertnosmirk one track, a project/EP, or the whole artist operation?
+      This is the remaining gate on Section 2.
+- [ ] Q12 — Should the lyrics be committed to the public repo, or kept out of it?
 - [ ] Q10 — Where does the finished audio live once generated, and does this repo track
       the creative assets or only the prompts and notes?
 
@@ -220,20 +233,29 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   Influence ~75-85%), step-by-step Suno Voices upload instructions for the H.I.MVelli
   file, and a ranked troubleshooting list for when Suno drifts melodic.
 - Flagged that the repo is public and the creative brief is now world-readable (Q7).
+- Owner confirmed H.I.MVelli is their own voice and that the Persona/Voice is already
+  built inside their Suno account — resolving Q8 and the voice-rights question, and
+  making the pack's upload section a no-op for them.
+- Wrote full lyrics to the owner's style brief: intro, two 16-bar verses, a chanted
+  (not sung) hook used twice, and an outro, with hard-consonant line endings chosen
+  specifically to resist melodic delivery. Clean draft; explicit version offered.
+- **Held the lyrics out of the repo** because it is public. Delivered in-session only,
+  pending the owner's answer to Q7/Q12.
 
 **Decided:**
 - No new D-numbered decisions. The account-access constraint is recorded in Section 3;
   it is a fact about capability, not a choice the owner made, so it is not a decision row.
 
 **Left open:**
-- The track is not generated and no lyrics are written.
-- The H.I.MVelli voice file has never been shared with an agent.
-- Q8-Q10 added to Section 7.
+- The track is not generated. Prompt pack + persona + lyrics are all ready; only the
+  owner can run the generation.
+- The lyrics exist only in the session transcript, not in the repo (Q12).
+- Q11 and Q12 added to Section 7; Q8 and Q9 resolved.
 
 **Next agent should:**
-Ask Q8 — is this a music project and who is H.I.MVelli — and write the answer into
-Sections 1 and 2. If the owner instead wants to move forward on the track, write the
-lyrics to the brief in Section 7 Q9; do not attempt the Suno login.
+Ask Q11 (scope: one track, an EP, or the whole artist operation?) and write Section 2 from
+the answer. Do not attempt the Suno login — see Section 3 Blockers. Do not commit lyrics
+or unreleased audio to this repo until Q7/Q12 is answered.
 
 ---
 
