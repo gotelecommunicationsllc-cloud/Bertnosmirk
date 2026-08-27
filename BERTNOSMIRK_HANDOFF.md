@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.10 |
+| **File version** | v1.11 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -186,6 +186,16 @@ being relitigated.*
 
 - **Continuity is the priority.** Do not make the user re-explain context.
 - **Update this file every session.** Handoff quality is part of the deliverable.
+- **The owner dictates with speech-to-text. Read for intent, not literal text.** His messages
+  arrive through voice transcription, so expect wrong homophones, dropped words, run-on
+  sentences, and mangled proper nouns. Work out what he meant and act on that; do not
+  execute a prompt literally when the literal reading is obviously a transcription error.
+  Known examples already seen: "sooner" and "Suno AI" = **Suno**; "Chrome OS" /
+  "Chromelist" = a **web browser**; "impute" = **input**; "the subs" = **the songs**.
+  If a message is garbled past recovery, ask one short clarifying question instead of
+  guessing — and if a message contains stray conversation, repeated phrases, or ends with
+  something like "stop it", it is probably an **open microphone**, not an instruction.
+  Confirm before acting on it.
 - ⚠️ NEEDS INPUT — *tone, response length, formatting, level of detail, anything that
   reliably annoys you when models get it wrong.*
 
