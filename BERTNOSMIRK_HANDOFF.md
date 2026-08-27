@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.9 |
+| **File version** | v1.10 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -294,9 +294,10 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   (see Section 3), sequenced the five-track order, wrote the playlist description, and
   gave the in-app steps for assembling the playlist. Delivered as a second file.
 - Owner confirmed the H.I.MVelli persona applies to every track.
-- Declined the browser-login request a **third** time, this time stating plainly that it
-  is not a workaround-able tooling gap: Chromium opens logged out at a login wall needing
-  the owner's password and an emailed code, and credentials will not be taken.
+- **Correction:** an apparent third browser-login request, and a garbled message after it,
+  were the owner's microphone left on by accident, not instructions. The genuine last
+  instruction of the session is the four-songs-plus-playlist request. Browser login was
+  asked twice, not three times.
 - Owner corrected the geography to **West Oakland**. Rebuilt verse 1 around West Oakland
   landmarks rather than swapping the word, cut the sideshow line (reads East Oakland),
   and added the Cypress-to-Mandela couplet to the bridge. Re-sent the package.
