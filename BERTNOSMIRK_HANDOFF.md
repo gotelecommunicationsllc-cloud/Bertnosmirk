@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.8 |
+| **File version** | v1.9 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -45,13 +45,13 @@ registered as a Persona/Voice inside their Suno account. So this is a
 `⚠️ NEEDS INPUT` because scope, purpose and definition-of-success have not been stated —
 but the "what is it" question is no longer dark.
 
-**Current status in one line:** The first song is written and production-ready —
-**"Above the Line"**, a complete two-pass Suno package (style, exclude, full lyrics,
-settings, Extend plan) — but the track itself is unmade because generating it requires
-the owner's Suno account, which no agent can operate.
+**Current status in one line:** A **five-track playlist is fully written and
+production-ready** — "From the Block Pushing Rocks to Free Phones Fresh Out the Box" —
+but none of it is generated, because that happens inside the owner's Suno account, which
+no agent can operate.
 
-**Single most important next action:** Get the owner's answer on scope — is Bertnosmirk one
-track, a project/EP, or the artist operation as a whole? — then write Section 2.
+**Single most important next action:** The owner generates the five tracks in Suno and
+reports back what needs adjusting. Everything upstream of that is done.
 
 ---
 
@@ -87,7 +87,16 @@ track, a project/EP, or the artist operation as a whole? — then write Section 
   prompt pack (style block, exclude-styles block, lyrics-box vocal-direction header,
   single-paragraph variant, UI settings table, Suno Voices upload steps, and a
   troubleshooting list for when Suno drifts melodic).
-- **The song is finished: "Above the Line."** Final structure is intro / verse 1 (Oakland)
+- **A five-track playlist is finished and packaged: "From the Block Pushing Rocks to Free
+  Phones Fresh Out the Box."** Running order: (1) *Pushing Rocks*, 84 BPM, cold — West
+  Oakland, the trade, deliberately unromanticized; (2) *Activation*, 92 BPM, driving — the
+  government-phone business as real work, the line, the forms, compliance; (3) *Same
+  Hands*, 80 BPM, sparse — the reckoning, refuses easy absolution, "ain't a redemption
+  song, it's a maintenance log"; (4) *Fresh Out the Box*, 90 BPM, triumphant — carries the
+  playlist title in its hook; (5) *Above the Line* — the full arc, closer. Tracks 1-4 each
+  fit one generation; only track 5 needs the Extend pass. Every track specifies the
+  H.I.MVelli persona. Playlist name and description are written and ready to paste.
+- **"Above the Line" (track 5) detail:** Final structure is intro / verse 1 (Oakland)
   / hook / verse 2 (Reno to Vegas) / hook — generated first — then verse 3 (the turn) /
   10-bar bridge / hook / outro added via Suno's **Extend**, because three verses plus a
   bridge exceed one generation and compression is what breaks strict spoken delivery.
@@ -280,6 +289,14 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   so sung phrasing is physically resisted. Packaged with style block, exclude block,
   settings and the two-pass Extend plan, and sent to the owner as a file rather than
   committed to the public repo.
+- Owner then asked for four more songs on the same territory, collected into a playlist
+  named "From the Block Pushing Rocks to Free Phones Fresh Out the Box". Wrote all four
+  (see Section 3), sequenced the five-track order, wrote the playlist description, and
+  gave the in-app steps for assembling the playlist. Delivered as a second file.
+- Owner confirmed the H.I.MVelli persona applies to every track.
+- Declined the browser-login request a **third** time, this time stating plainly that it
+  is not a workaround-able tooling gap: Chromium opens logged out at a login wall needing
+  the owner's password and an emailed code, and credentials will not be taken.
 - Owner corrected the geography to **West Oakland**. Rebuilt verse 1 around West Oakland
   landmarks rather than swapping the word, cut the sideshow line (reads East Oakland),
   and added the Cypress-to-Mandela couplet to the bridge. Re-sent the package.
