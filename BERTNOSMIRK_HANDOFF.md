@@ -6,8 +6,8 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.3 |
-| **Last updated** | 2026-08-26 |
+| **File version** | v1.4 |
+| **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
 | **Canonical location** | GitHub — `gotelecommunicationsllc-cloud/Bertnosmirk`, file `BERTNOSMIRK_HANDOFF.md` on `main` (see D6) |
@@ -37,14 +37,20 @@ You are picking up an in-progress project. Before you do anything else:
 
 ## 1. TL;DR — READ THIS IF YOU READ NOTHING ELSE
 
-⚠️ NEEDS INPUT — *One paragraph: what Bertnosmirk is, why it exists, and what
-"done" looks like. Fill this in and every future session starts warm.*
+**First real signal on what this project is (Session 004):** the owner asked for a rap
+track to be produced on suno.com (AI music generation) using the voice of an artist called
+**H.I.MVelli**. That is the first project-substance request in four sessions. It strongly
+suggests Bertnosmirk is a **music / recording-artist project**, but the owner has not
+confirmed that in so many words, so Section 2 stays marked `⚠️ NEEDS INPUT` rather than
+being filled in on an agent's inference.
 
-**Current status in one line:** Context infrastructure is complete and version-controlled
-on GitHub; the project's actual substance is still not captured.
+**Current status in one line:** First creative deliverable produced — a ready-to-paste
+Suno prompt pack for an aggressive, heavy-808, strict-spoken-bar rap track
+(`suno/HIMVELLI_RAP_TRACK_PROMPT.md`) — but the track itself is unmade because generating
+it requires the owner's Suno account.
 
-**Single most important next action:** Answer Q1 — what Bertnosmirk actually is — then
-populate Sections 1–5 with real project details.
+**Single most important next action:** Confirm Q1 in one sentence — is Bertnosmirk a music
+project, and is H.I.MVelli the artist? — so Sections 1 and 2 can finally be written.
 
 ---
 
@@ -75,14 +81,17 @@ populate Sections 1–5 with real project details.
 *This section is the live truth. Rewrite it as things change — do not append here.*
 
 ### Where things stand right now
-- Handoff infrastructure is built, version-controlled, and live on GitHub `main`. The
-  403-on-push blocker from Session 002 is resolved.
+- Handoff infrastructure is complete, version-controlled, and live on GitHub `main`.
+- **First creative work exists:** `suno/HIMVELLI_RAP_TRACK_PROMPT.md` — a complete Suno
+  prompt pack (style block, exclude-styles block, lyrics-box vocal-direction header,
+  single-paragraph variant, UI settings table, Suno Voices upload steps, and a
+  troubleshooting list for when Suno drifts melodic).
+- The rap track has **not** been generated. No lyrics are written either — the prompt pack
+  governs sound and delivery only.
 - The repo is **public**. Anything written into these files is world-readable, including
-  the owner's email in Section 6.
-- Project substance still not captured. Sections 1, 2, and parts of 5 remain
-  `⚠️ NEEDS INPUT`.
-- Working method going forward: Claude Code sessions against the repo, not chat sessions
-  with manual file uploads.
+  the owner's email in Section 6 and now the creative brief in `suno/`.
+- Project substance still not formally captured. Sections 1, 2, and parts of 5 remain
+  `⚠️ NEEDS INPUT`, though Session 004 gave the first real hint (see Section 1).
 
 ### What exists already
 | Asset | Where it lives | Notes |
@@ -90,12 +99,20 @@ populate Sections 1–5 with real project details.
 | `BERTNOSMIRK_HANDOFF.md` | GitHub repo + Claude Project "Bertnosmirk" | This file |
 | `CLAUDE.md` | GitHub repo root | Auto-loaded by Claude Code; points sessions here |
 | `README.md` | GitHub repo root | Usage instructions and raw-link reference |
-| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Populated 2026-08-26. Files on `main` and on `claude/md-files-github-upload-k5l23p` (same commit) |
+| `suno/HIMVELLI_RAP_TRACK_PROMPT.md` | GitHub repo | Suno prompt pack, added Session 004 |
+| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Files on `main` |
 
 ### Blockers
-- **Nothing is blocking work, but nothing can start.** The project has never been
-  described. Q1 is the gate: until someone says what Bertnosmirk is, no agent can do
-  anything beyond maintaining this file.
+- **Third-party account access.** No agent — Claude Code, Cowork, or otherwise — can log
+  into the owner's suno.com account. There are no stored credentials, no authenticated
+  browser session, and asking the owner for account credentials is out of bounds. Every
+  step that happens *inside* Suno (uploading the H.I.MVelli voice to Suno Voices,
+  selecting the persona, pressing Create, downloading the result) is the owner's to do.
+  Agents can produce prompts, lyrics, and instructions; they cannot operate the account.
+  Treat this as a standing constraint, not a one-off failure.
+- **The H.I.MVelli voice file** has never been shared with any agent. It exists on the
+  owner's side only.
+- **Q1 is still formally unanswered**, though no longer fully dark — see Section 1.
 
 *(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
 resolved: a Claude Code session with the repo in its authorized set pushes normally.
@@ -162,13 +179,61 @@ Section 4 once it is settled.*
 - [x] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
       mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
 - [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
-      Making it private later does not un-publish what was already pushed.
+      Making it private later does not un-publish what was already pushed. **Now live, not
+      hypothetical:** the Session 004 creative brief is in the public repo.
+- [ ] Q8 — Is Bertnosmirk a music / recording-artist project, and is H.I.MVelli the artist
+      (the owner, or someone the owner works with)? One sentence unlocks Sections 1 and 2.
+- [ ] Q9 — Should lyrics be written for this track, and to what brief (subject, length,
+      hook, explicit or clean)?
+- [ ] Q10 — Where does the finished audio live once generated, and does this repo track
+      the creative assets or only the prompts and notes?
 
 ---
 
 ## 8. SESSION LOG
 
 *Append-only. Newest entry first. Never edit or delete a past entry.*
+
+---
+
+### 2026-08-27 — Session 004
+**Platform:** Claude Code (remote) · **Agent:** Claude
+
+**Asked for:**
+Log into the owner's suno.com account and create a rap track: heavy 808s, vocals via the
+Suno Voices tool using an H.I.MVelli voice file, vocals dry and close-mic'd, strict rap
+delivery with no singing/melody/harmonies/melodic ad-libs, punchy percussive spoken flow
+with syllable-heavy cadence, clear consonants; style aggressive, grimy, inner-city street,
+flow riding the beat "like it's hugging it", metaphor-heavy, 808s that vibrate a car
+trunk — then turn all of those commands into a ready-made Suno prompt.
+
+**Done:**
+- Declined the account login and said why: no credentials, no authenticated session, and
+  asking for third-party account credentials is out of bounds. Recorded as a standing
+  constraint in Section 3 rather than a transient failure.
+- Delivered the prompt request in full — created `suno/HIMVELLI_RAP_TRACK_PROMPT.md`
+  containing: a paste-ready STYLE block (88 BPM, trunk-rattling 808s, grimy minor-key
+  loop, pocket-locked spoken delivery, dry close-mic vocal), a paste-ready EXCLUDE STYLES
+  block that carries the no-singing/no-melody/no-harmony constraints, a LYRICS-box vocal
+  direction header with per-section `- no melody` tags, a single-paragraph variant for
+  one-box workflows, a UI settings table (Custom mode, v5, Weirdness ~20-30%, Style
+  Influence ~75-85%), step-by-step Suno Voices upload instructions for the H.I.MVelli
+  file, and a ranked troubleshooting list for when Suno drifts melodic.
+- Flagged that the repo is public and the creative brief is now world-readable (Q7).
+
+**Decided:**
+- No new D-numbered decisions. The account-access constraint is recorded in Section 3;
+  it is a fact about capability, not a choice the owner made, so it is not a decision row.
+
+**Left open:**
+- The track is not generated and no lyrics are written.
+- The H.I.MVelli voice file has never been shared with an agent.
+- Q8-Q10 added to Section 7.
+
+**Next agent should:**
+Ask Q8 — is this a music project and who is H.I.MVelli — and write the answer into
+Sections 1 and 2. If the owner instead wants to move forward on the track, write the
+lyrics to the brief in Section 7 Q9; do not attempt the Suno login.
 
 ---
 
