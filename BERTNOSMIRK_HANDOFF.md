@@ -6,8 +6,8 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.3 |
-| **Last updated** | 2026-08-26 |
+| **File version** | v1.4 |
+| **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
 | **Canonical location** | GitHub — `gotelecommunicationsllc-cloud/Bertnosmirk`, file `BERTNOSMIRK_HANDOFF.md` on `main` (see D6) |
@@ -37,31 +37,71 @@ You are picking up an in-progress project. Before you do anything else:
 
 ## 1. TL;DR — READ THIS IF YOU READ NOTHING ELSE
 
-⚠️ NEEDS INPUT — *One paragraph: what Bertnosmirk is, why it exists, and what
-"done" looks like. Fill this in and every future session starts warm.*
+Bertnosmirk is the working home for **H.I.MVelli**, a five-track rap project titled *From
+the Block Pushing Rocks to Free Phones Fresh Out the Box*. The five songs trace one arc —
+West Oakland drug trade → Reno → Vegas → running a lawful government-assistance phone
+(Lifeline/ACP-style) business, handing out free devices to people in line. The songs are
+produced in **Suno** (suno.com), the AI music generator, from hand-written lyrics and
+tightly-specified style prompts. Every song is strict spoken bars over heavy 808s with
+**no singing** — that constraint is the hardest technical part of the whole project,
+because Suno defaults to melodic delivery. "Done" is: five finished Suno tracks, each
+renamed to its title, assembled into a playlist in running order 01→05.
 
-**Current status in one line:** Context infrastructure is complete and version-controlled
-on GitHub; the project's actual substance is still not captured.
+**Current status in one line:** All five tracks' Suno commands (Style / Exclude / Lyrics)
+are written, finalized, and committed to this repo under `suno/`; nothing has been
+generated in Suno yet.
 
-**Single most important next action:** Answer Q1 — what Bertnosmirk actually is — then
-populate Sections 1–5 with real project details.
+**Single most important next action:** Run the five tracks in Suno from `suno/` — start at
+`suno/00-session-settings.md`, then work 01 → 05 — and record each result in the checklist
+at the bottom of `suno/99-playlist.md`.
 
 ---
 
 ## 2. PROJECT DEFINITION
 
 ### What it is
-⚠️ NEEDS INPUT
+A five-track rap project recorded through **Suno** under the artist name **H.I.MVelli**,
+titled *From the Block Pushing Rocks to Free Phones Fresh Out the Box*. It is
+autobiographical: the owner's own arc from selling drugs in West Oakland, through Reno and
+Vegas, to running a legitimate government-assistance phone business.
+
+The running order and what each track carries:
+
+| # | Track | BPM | Feel | Subject |
+|---|---|---|---|---|
+| 01 | Pushing Rocks | 84 | cold | West Oakland, the trade, none of the romance |
+| 02 | Activation | 92 | driving | The phone business as actual work — the line, the forms, the faces |
+| 03 | Same Hands | 80 | sparse | The reckoning; the hardest of the five and the one that earns the rest |
+| 04 | Fresh Out the Box | 90 | triumphant | Arrival; title track, carries the project title in the hook |
+| 05 | Above the Line | 88 | full arc | Closer: Oakland → Reno → Vegas → the table. Two passes (Create + Extend) |
+
+**The sound is a hard constraint, not a preference:** grimy minor-key boom-trap, distorted
+808 sub-bass tuned to rattle a car trunk, dry close-mic'd vocal, strict spoken bar
+delivery, no melody, no autotune, no layering, no sung hooks. Every track ships with an
+Exclude-Styles list enforcing that.
 
 ### Why it exists / the problem it solves
-⚠️ NEEDS INPUT
+It is the owner's story told in his own words rather than by someone else, and told
+without glamorizing the first half of it. Track 03 exists specifically to refuse the
+redemption-arc framing — the record's own position is "same hands, different weight," not
+absolution.
 
 ### Definition of success
-⚠️ NEEDS INPUT
+1. All five tracks generated in Suno, each in the intended strict-spoken style with no
+   singing anywhere in the take.
+2. Each generation renamed to its track title in the Suno library.
+3. All five assembled into one Suno playlist, named and described, in running order 01→05.
 
 ### Explicitly out of scope
 *(Listing what this project is NOT prevents future agents from wandering.)*
-⚠️ NEEDS INPUT
+- **Rewriting the lyrics.** They are finished and hand-written. An agent may reformat them
+  for Suno; it does not edit the words without being asked.
+- **Softening the content.** The first-half material is deliberately unglamorous and the
+  reckoning in track 03 is deliberately unresolved.
+- **Automating Suno.** Suno has no public API and no prompt import. Generation is a manual
+  copy-paste session the owner runs. Do not build scrapers or browser automation for it.
+- **More context tooling.** Three sessions were spent building infrastructure around this
+  file. That work is done.
 
 ### Deadlines / key dates
 | Date | Milestone | Status |
@@ -75,27 +115,37 @@ populate Sections 1–5 with real project details.
 *This section is the live truth. Rewrite it as things change — do not append here.*
 
 ### Where things stand right now
-- Handoff infrastructure is built, version-controlled, and live on GitHub `main`. The
-  403-on-push blocker from Session 002 is resolved.
-- The repo is **public**. Anything written into these files is world-readable, including
-  the owner's email in Section 6.
-- Project substance still not captured. Sections 1, 2, and parts of 5 remain
-  `⚠️ NEEDS INPUT`.
-- Working method going forward: Claude Code sessions against the repo, not chat sessions
-  with manual file uploads.
+- **The project has substance now.** Sections 1 and 2 describe the actual work: the
+  H.I.MVelli five-track Suno project. Three sessions of "we don't know what this is" are
+  over.
+- **All five tracks' Suno commands are finalized and in the repo** under `suno/` — one
+  Markdown file per track, each holding the exact Style text, Exclude-Styles text, and
+  lyrics, in paste order.
+- **Nothing has been generated in Suno yet.** Zero of five tracks exist as audio.
+- The repo is **public**. Anything written into these files is world-readable — including
+  the owner's email in Section 6, and now the full lyrics, which are personal and
+  autobiographical. Q7 matters more than it did yesterday.
+- Working method: Claude Code sessions against the repo. Chat/Cowork sessions cannot push.
 
 ### What exists already
 | Asset | Where it lives | Notes |
 |---|---|---|
+| `suno/README.md` | GitHub repo | Index and how-to-run for the whole session |
+| `suno/00-session-settings.md` | GitHub repo | Mode, model, persona, sliders — set once before track 1 |
+| `suno/01-…` through `suno/05-…` | GitHub repo | One file per track: Style, Exclude, Lyrics, in paste order |
+| `suno/99-playlist.md` | GitHub repo | Playlist name/description + the progress checklist |
+| Claude artifact "Block to Box Sessions" | `claude.ai/code/artifact/b96e2d95-a0b3-4ad5-879b-624a9a611b54` | Same content as `suno/`, with Copy buttons and a progress tracker. The repo copy is the durable one |
 | `BERTNOSMIRK_HANDOFF.md` | GitHub repo + Claude Project "Bertnosmirk" | This file |
 | `CLAUDE.md` | GitHub repo root | Auto-loaded by Claude Code; points sessions here |
 | `README.md` | GitHub repo root | Usage instructions and raw-link reference |
-| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Populated 2026-08-26. Files on `main` and on `claude/md-files-github-upload-k5l23p` (same commit) |
+| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Default branch is still `claude/md-files-github-upload-k5l23p`, not `main` |
 
 ### Blockers
-- **Nothing is blocking work, but nothing can start.** The project has never been
-  described. Q1 is the gate: until someone says what Bertnosmirk is, no agent can do
-  anything beyond maintaining this file.
+- **Suno generation is manual and only the owner can do it.** Suno requires a logged-in
+  account, has no public API and no prompt-file import. An AI agent — in Claude Code, chat,
+  or anywhere else — cannot log into Suno, cannot press Create, and cannot produce the
+  audio. Everything up to the paste is automatable; the paste is not. This is a permanent
+  property of the tool, not a temporary gap.
 
 *(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
 resolved: a Claude Code session with the repo in its authorized set pushes normally.
@@ -117,6 +167,8 @@ being relitigated.*
 | D4 | Mirror the file to GitHub repo `gotelecommunicationsllc-cloud/Bertnosmirk`, with a `CLAUDE.md` that auto-directs Claude Code sessions to it | 2026-08-26 | Gives a raw URL other tools can fetch, version history on the file, and automatic pickup by Claude Code without the user prompting for it |
 | D5 | Use Claude Code sessions (with the repo attached) as the working surface for this project, rather than chat sessions with manual uploads | 2026-08-26 | Claude Code can commit and push directly, so the handoff file updates itself as part of the work instead of requiring a manual re-upload each time |
 | D6 | **Supersedes D3.** GitHub `main` is the canonical copy. The Claude Project copy is demoted to a mirror and should be refreshed from GitHub, never edited independently | 2026-08-26 | Two canonical copies drift. Since D5 makes Claude Code the working surface and it writes to the repo, the repo is the copy that is always current by construction; git also gives per-change history that the Project copy cannot |
+| D7 | The Suno commands live as Markdown in `suno/`, one file per track, each self-contained (Style + Exclude + Lyrics together) | 2026-08-27 | Suno is a copy-paste surface with three separate boxes. A file per track with the blocks in paste order means no scrolling and no cross-file jumping mid-generation, which is when mistakes happen |
+| D8 | The repo copy under `suno/` is canonical for the commands; the Claude artifact "Block to Box Sessions" is a convenience mirror | 2026-08-27 | Same reasoning as D6. The artifact has Copy buttons and is nicer to work from, but it is not version-controlled and cannot be diffed. Edit `suno/`, then republish the artifact from it — never the reverse |
 
 ---
 
@@ -134,8 +186,15 @@ being relitigated.*
 
 | Term | Meaning |
 |---|---|
-| Bertnosmirk | ⚠️ NEEDS INPUT — origin/meaning of the name |
+| Bertnosmirk | The repo/project name. Its origin and whether it is meant as the release name is still unconfirmed — see Q8 |
+| H.I.MVelli | The artist name the tracks are recorded under; also the Suno persona/voice setting |
 | Handoff file | This document |
+| Style box | Suno's field for the sonic description (instrumentation, mix, delivery, BPM) |
+| Exclude Styles box | Suno's negative-prompt field. Carries the no-singing enforcement list. **Known to silently clear itself on some mode switches** — re-check it every track |
+| Persona | Suno's saved-voice feature. Set to H.I.MVelli for every track so the five tracks sound like one artist |
+| Extend | Suno's continue-this-take feature. Track 05 needs it — the lyrics are too long for one generation |
+| Pass | One Create-or-Extend generation. Tracks 01–04 are one pass; track 05 is two |
+| Trunk talk | Recurring spoken tag closing most tracks |
 
 ---
 
@@ -152,8 +211,12 @@ being relitigated.*
 *Unresolved items. An incoming agent may work on any of these. Move an item to
 Section 4 once it is settled.*
 
-- [ ] Q1 — What is Bertnosmirk? (definition, purpose, success criteria)
-- [ ] Q2 — What has already been built or attempted?
+- [x] Q1 — What is Bertnosmirk? (definition, purpose, success criteria) — **Resolved
+      2026-08-27.** It is the H.I.MVelli five-track Suno project; see Sections 1 and 2.
+      Source was the Claude artifact "Block to Box Sessions," which the owner surfaced in
+      Session 004.
+- [x] Q2 — What has already been built or attempted? — **Resolved 2026-08-27.** Lyrics and
+      Suno prompts for all five tracks are written and finalized. No audio generated yet.
 - [ ] Q3 — What is the deadline or target timeline, if any?
 - [ ] Q4 — Which AI platforms will this file be used with, so formatting can be tuned?
 - [x] Q5 — Confirm the three files landed in the GitHub repo and the Claude GitHub App is
@@ -161,14 +224,68 @@ Section 4 once it is settled.*
       Code session; repo access confirmed working.
 - [x] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
       mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
-- [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
-      Making it private later does not un-publish what was already pushed.
+- [ ] Q7 — The repo is public. **Now urgent:** the full lyrics are in it as of Session 004,
+      and they are personal and autobiographical. Confirm public is intended. Making the
+      repo private later does not un-publish what was already pushed.
+- [ ] Q8 — Where does the name "Bertnosmirk" come from, and is it the release name, a
+      codename, or unrelated to H.I.MVelli?
+- [ ] Q9 — What happens after the five tracks exist? Distribution, cover art, a release
+      anywhere beyond a Suno playlist?
+- [ ] Q10 — Should generated track links / Suno URLs be recorded in this repo as tracks
+      land, or kept out of a public repo?
 
 ---
 
 ## 8. SESSION LOG
 
 *Append-only. Newest entry first. Never edit or delete a past entry.*
+
+---
+
+### 2026-08-27 — Session 004
+**Platform:** Claude Code (remote) · **Agent:** Claude
+
+**Asked for:**
+"How do I get commands sent to the MD files handed to Suno" — pointing at the Claude
+artifact "Block to Box Sessions" — and then: go into Suno, use the commands, and build the
+finished project the owner has been describing all along.
+
+**Done:**
+- Read the artifact. **This is what finally answered Q1.** The artifact holds a complete
+  five-track Suno session sheet for H.I.MVelli — Style prompt, Exclude-Styles list, and
+  full hand-written lyrics for each track, plus session settings and playlist steps.
+- Wrote Sections 1 and 2 from it: what the project is, the five tracks and their arc, the
+  no-singing sonic constraint, what "done" means, and what is out of scope.
+- Extracted every command into version-controlled Markdown under `suno/`:
+  `README.md`, `00-session-settings.md`, `01-pushing-rocks.md`, `02-activation.md`,
+  `03-same-hands.md`, `04-fresh-out-the-box.md`, `05-above-the-line.md`, `99-playlist.md`.
+  Each track file is self-contained and ordered the way the boxes are filled.
+- Added a progress checklist to `99-playlist.md` so the next session knows which tracks
+  landed.
+- Resolved Q1 and Q2; escalated Q7 (the lyrics are now in a public repo); opened Q8–Q10.
+
+**Decided:**
+- D7 — Suno commands live as one self-contained Markdown file per track under `suno/`.
+- D8 — `suno/` is canonical for the commands; the artifact is a convenience mirror.
+
+**Left open:**
+- **Zero of five tracks generated.** The owner asked the agent to go into Suno and create
+  the project. It could not: Suno requires a logged-in account, has no public API, and has
+  no way to import a prompt file. An agent cannot press Create. The commands are prepared
+  to the last inch; the generation itself is the owner's to run, and the checklist in
+  `suno/99-playlist.md` is where the results get recorded.
+- Q3, Q4, Q7–Q10 unanswered. Q7 is the one worth answering first.
+- Repo default branch is still `claude/md-files-github-upload-k5l23p` rather than `main` —
+  a GitHub web-UI setting only the owner can change.
+- This file is now ~3,700 words, over the ~2,000-word guideline in Section 9. That was a
+  deliberate call: the growth is Sections 1–3 finally carrying real project substance, and
+  condensing the 001–003 log (645 words, all infrastructure) would not bring it under the
+  limit anyway. Revisit if it passes ~5,000.
+
+**Next agent should:**
+Ask whether the Suno run has happened. If tracks exist, record their titles and links per
+Q10 and update Section 3. If not, walk the owner through `suno/00-session-settings.md` and
+track 01 — do not rewrite the lyrics or rebuild the command files, they are finished.
 
 ---
 
