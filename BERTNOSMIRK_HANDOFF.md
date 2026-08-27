@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.5 |
+| **File version** | v1.6 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -87,9 +87,13 @@ track, a project/EP, or the artist operation as a whole? — then write Section 
   prompt pack (style block, exclude-styles block, lyrics-box vocal-direction header,
   single-paragraph variant, UI settings table, Suno Voices upload steps, and a
   troubleshooting list for when Suno drifts melodic).
-- **Full lyrics written** (intro / verse 1 / hook / verse 2 / hook / outro, ~32 bars,
-  metaphor-dense, hard-consonant line endings, no profanity in the current draft). They
-  were delivered in-session and are **deliberately NOT in the repo** — see Blockers.
+- **Two sets of lyrics written**, both delivered in-session and **deliberately NOT in the
+  repo** (see Blockers): (1) a generic aggressive-street draft, and (2) the real one — an
+  autobiographical three-verse arc from the owner's own life story: dealing in East
+  Oakland, going on the run to Reno NV, trouble there, landing in Las Vegas and pimping,
+  then leaving street life for legitimate work distributing government-assistance
+  (Lifeline) phones to low-income people, and becoming a better husband through it. The
+  hook turns on "same hunger, changed what it feeds."
 - The **H.I.MVelli persona already exists in the owner's Suno account**, built from the
   owner's own voice. The voice-upload step in the prompt pack is therefore already done,
   and the rights/consent question around uploaded voices is settled.
@@ -117,9 +121,17 @@ track, a project/EP, or the artist operation as a whole? — then write Section 
   selecting the persona, pressing Create, downloading the result) is the owner's to do.
   Agents can produce prompts, lyrics, and instructions; they cannot operate the account.
   Treat this as a standing constraint, not a one-off failure.
-- **Public repo vs. unreleased creative work.** The lyrics are held out of the repo on
-  purpose: it is world-readable, so committing unreleased bars publishes them. Awaiting
-  the owner's call (Q7). Do not commit lyrics or unreleased audio until that is answered.
+- **Public repo vs. unreleased AND personal creative work.** The lyrics are held out of
+  the repo on purpose. It is world-readable, and the current draft is the owner's actual
+  life story — including past criminal conduct — attached to a repo carrying their real
+  name and email. Committing it publishes it. Awaiting the owner's call (Q7/Q12). Do not
+  commit lyrics or unreleased audio until that is answered.
+- **Repeated request to operate the Suno account via a browser.** Asked twice, declined
+  twice. Chromium and Playwright are available in Claude Code remote sessions, but Suno
+  login needs the owner's password plus an emailed verification code, and asking the
+  owner for credentials is out of bounds. This is a capability and boundary limit, not a
+  tooling gap — a future session with a browser will hit the same wall. The generation
+  is a ~1-minute copy-paste for the owner.
 - **The H.I.MVelli voice file** has never been shared with any agent and does not need to
   be — the persona is already built inside the owner's Suno account.
 
@@ -241,6 +253,14 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   specifically to resist melodic delivery. Clean draft; explicit version offered.
 - **Held the lyrics out of the repo** because it is public. Delivered in-session only,
   pending the owner's answer to Q7/Q12.
+- Owner then gave the real subject matter — their life story (Oakland dealing → Reno on
+  the run → Las Vegas pimping → leaving street life → distributing government Lifeline
+  phones to people on assistance → better husband). Rewrote the lyrics as a three-verse
+  arc on that story, keeping the strict-spoken-bar delivery rules.
+- Advised generating verses 1-2 first and using Suno's **Extend** for verse 3 + outro,
+  since three verses will exceed a single generation's length.
+- Declined the browser-login request a second time, with the specific reason (password +
+  emailed verification code, credentials not askable).
 
 **Decided:**
 - No new D-numbered decisions. The account-access constraint is recorded in Section 3;
@@ -254,8 +274,8 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
 
 **Next agent should:**
 Ask Q11 (scope: one track, an EP, or the whole artist operation?) and write Section 2 from
-the answer. Do not attempt the Suno login — see Section 3 Blockers. Do not commit lyrics
-or unreleased audio to this repo until Q7/Q12 is answered.
+the answer. Do not attempt the Suno login, with or without a browser — see Section 3
+Blockers. Do not commit lyrics or unreleased audio to this repo until Q7/Q12 is answered.
 
 ---
 
