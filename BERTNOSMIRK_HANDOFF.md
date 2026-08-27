@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.7 |
+| **File version** | v1.8 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -89,10 +89,17 @@ track, a project/EP, or the artist operation as a whole? — then write Section 
   troubleshooting list for when Suno drifts melodic).
 - **The song is finished: "Above the Line."** Final structure is intro / verse 1 (Oakland)
   / hook / verse 2 (Reno to Vegas) / hook — generated first — then verse 3 (the turn) /
-  8-bar bridge / hook / outro added via Suno's **Extend**, because three verses plus a
+  10-bar bridge / hook / outro added via Suno's **Extend**, because three verses plus a
   bridge exceed one generation and compression is what breaks strict spoken delivery.
   The hook carries the arc: *"never killed the hunger in my chest, I just switched the
   grip."* Delivered to the owner as a file, not committed (see Blockers).
+- **Geography is West Oakland specifically, not Oakland generally** — the owner corrected
+  this and it is now load-bearing. Verse 1 is built on West Oakland furniture: port cranes,
+  I-880 overhead, the freight line through the Lower Bottoms, 7th Street, candles on
+  Mandela Parkway. The name appears 7 times (intro, verse 1 opening bar, all three hooks,
+  outro). The bridge uses the Cypress Structure falling in 1989 and being rebuilt as
+  Mandela Parkway as the song's central metaphor for the owner's own arc — collapse, then
+  become the road somebody else travels. Do not swap in generic Oakland imagery.
 - Earlier drafts, both delivered in-session and **deliberately NOT in the repo**: (1) a
   generic aggressive-street draft, and (2) the first pass at the real one — an
   autobiographical three-verse arc from the owner's own life story: dealing in East
@@ -273,6 +280,9 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   so sung phrasing is physically resisted. Packaged with style block, exclude block,
   settings and the two-pass Extend plan, and sent to the owner as a file rather than
   committed to the public repo.
+- Owner corrected the geography to **West Oakland**. Rebuilt verse 1 around West Oakland
+  landmarks rather than swapping the word, cut the sideshow line (reads East Oakland),
+  and added the Cypress-to-Mandela couplet to the bridge. Re-sent the package.
 
 **Decided:**
 - No new D-numbered decisions. The account-access constraint is recorded in Section 3;
