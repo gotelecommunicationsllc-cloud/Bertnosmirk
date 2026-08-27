@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.6 |
+| **File version** | v1.7 |
 | **Last updated** | 2026-08-27 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -45,10 +45,10 @@ registered as a Persona/Voice inside their Suno account. So this is a
 `⚠️ NEEDS INPUT` because scope, purpose and definition-of-success have not been stated —
 but the "what is it" question is no longer dark.
 
-**Current status in one line:** First creative deliverable produced — a ready-to-paste
-Suno prompt pack for an aggressive, heavy-808, strict-spoken-bar rap track
-(`suno/HIMVELLI_RAP_TRACK_PROMPT.md`) — but the track itself is unmade because generating
-it requires the owner's Suno account.
+**Current status in one line:** The first song is written and production-ready —
+**"Above the Line"**, a complete two-pass Suno package (style, exclude, full lyrics,
+settings, Extend plan) — but the track itself is unmade because generating it requires
+the owner's Suno account, which no agent can operate.
 
 **Single most important next action:** Get the owner's answer on scope — is Bertnosmirk one
 track, a project/EP, or the artist operation as a whole? — then write Section 2.
@@ -87,8 +87,14 @@ track, a project/EP, or the artist operation as a whole? — then write Section 
   prompt pack (style block, exclude-styles block, lyrics-box vocal-direction header,
   single-paragraph variant, UI settings table, Suno Voices upload steps, and a
   troubleshooting list for when Suno drifts melodic).
-- **Two sets of lyrics written**, both delivered in-session and **deliberately NOT in the
-  repo** (see Blockers): (1) a generic aggressive-street draft, and (2) the real one — an
+- **The song is finished: "Above the Line."** Final structure is intro / verse 1 (Oakland)
+  / hook / verse 2 (Reno to Vegas) / hook — generated first — then verse 3 (the turn) /
+  8-bar bridge / hook / outro added via Suno's **Extend**, because three verses plus a
+  bridge exceed one generation and compression is what breaks strict spoken delivery.
+  The hook carries the arc: *"never killed the hunger in my chest, I just switched the
+  grip."* Delivered to the owner as a file, not committed (see Blockers).
+- Earlier drafts, both delivered in-session and **deliberately NOT in the repo**: (1) a
+  generic aggressive-street draft, and (2) the first pass at the real one — an
   autobiographical three-verse arc from the owner's own life story: dealing in East
   Oakland, going on the run to Reno NV, trouble there, landing in Las Vegas and pimping,
   then leaving street life for legitimate work distributing government-assistance
@@ -261,6 +267,12 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
   since three verses will exceed a single generation's length.
 - Declined the browser-login request a second time, with the specific reason (password +
   emailed verification code, credentials not askable).
+- Owner then asked for the complete song at best quality, agent's discretion. Produced
+  **"Above the Line"** — final title, three verses, an 8-bar bridge, a hook that turns the
+  whole arc on "same hunger, switched the grip", and every line ending on a hard consonant
+  so sung phrasing is physically resisted. Packaged with style block, exclude block,
+  settings and the two-pass Extend plan, and sent to the owner as a file rather than
+  committed to the public repo.
 
 **Decided:**
 - No new D-numbered decisions. The account-access constraint is recorded in Section 3;
@@ -269,7 +281,9 @@ trunk — then turn all of those commands into a ready-made Suno prompt.
 **Left open:**
 - The track is not generated. Prompt pack + persona + lyrics are all ready; only the
   owner can run the generation.
-- The lyrics exist only in the session transcript, not in the repo (Q12).
+- The finished song exists only in the session transcript and the file sent to the owner,
+  not in the repo (Q12). If the owner does not save it, it is lost when this container is
+  reclaimed.
 - Q11 and Q12 added to Section 7; Q8 and Q9 resolved.
 
 **Next agent should:**
