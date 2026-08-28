@@ -6,8 +6,8 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.3 |
-| **Last updated** | 2026-08-26 |
+| **File version** | v1.4 |
+| **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
 | **Canonical location** | GitHub — `gotelecommunicationsllc-cloud/Bertnosmirk`, file `BERTNOSMIRK_HANDOFF.md` on `main` (see D6) |
@@ -37,31 +37,51 @@ You are picking up an in-progress project. Before you do anything else:
 
 ## 1. TL;DR — READ THIS IF YOU READ NOTHING ELSE
 
-⚠️ NEEDS INPUT — *One paragraph: what Bertnosmirk is, why it exists, and what
-"done" looks like. Fill this in and every future session starts warm.*
+**Bertnosmirk is a music project — original songwriting, hip-hop-rooted, written to be
+recorded.** The owner writes lyrics and briefs an AI to rework them: tighten the writing,
+fix lines that reach for a rhyme instead of the truth, and build the arrangement out into
+the shape of a commercial single. The first track worked on is **"Blue Hour"** (Session
+004): a 4 a.m. insomnia record, spoken delivery throughout, trap kick under a rock snare,
+tenor sax, and a soul vocal that only enters at sunrise. What "done" looks like at the
+track level is a finished lyric plus arrangement notes a producer can cut from. What
+"done" looks like for the project overall is still open (see Q8).
 
-**Current status in one line:** Context infrastructure is complete and version-controlled
-on GitHub; the project's actual substance is still not captured.
+**Current status in one line:** The project finally has substance — one track reworked and
+delivered — but the creative work is deliberately being kept OUT of this public repo until
+Q7 is answered.
 
-**Single most important next action:** Answer Q1 — what Bertnosmirk actually is — then
-populate Sections 1–5 with real project details.
+**Single most important next action:** Answer **Q7** — is the repo meant to be public? Until
+then no lyrics can be committed here, and the project's real work lives outside version
+control, which is the exact problem this file was built to solve.
 
 ---
 
 ## 2. PROJECT DEFINITION
 
 ### What it is
-⚠️ NEEDS INPUT
+A songwriting project. The owner brings original lyrics; the AI's job is to **recreate**
+them — keep the hip-hop spine and the images that already work, cut the lines that were
+written to satisfy a rhyme, and add whatever structure the song needs to function as a
+single rather than a mood. Deliverable per track: final lyric, section-by-section
+arrangement direction, and a written account of every change and why it was made.
 
 ### Why it exists / the problem it solves
-⚠️ NEEDS INPUT
+Raw drafts have strong images but carry filler lines that undercut believability, and they
+tend to hold one texture for three minutes without ever peaking. The project exists to fix
+both without sanding off the voice that made the draft worth keeping.
 
 ### Definition of success
-⚠️ NEEDS INPUT
+Per track: a lyric the owner would put in front of a producer unchanged. Project-level
+success — an album, a release, a catalogue, something else — is Q8.
 
 ### Explicitly out of scope
 *(Listing what this project is NOT prevents future agents from wandering.)*
-⚠️ NEEDS INPUT
+- Building more tooling around this handoff file. Three sessions did that already; the
+  infrastructure is finished.
+- Generating music, audio, beats, or vocals. The output is **text**: lyrics and written
+  arrangement direction for humans to record.
+- Rewriting a song into a different genre. Hip hop is the spine of every track; rock and
+  soul are guests. An agent that turns a rap record into a rock song has failed the brief.
 
 ### Deadlines / key dates
 | Date | Milestone | Status |
@@ -75,14 +95,15 @@ populate Sections 1–5 with real project details.
 *This section is the live truth. Rewrite it as things change — do not append here.*
 
 ### Where things stand right now
-- Handoff infrastructure is built, version-controlled, and live on GitHub `main`. The
-  403-on-push blocker from Session 002 is resolved.
-- The repo is **public**. Anything written into these files is world-readable, including
-  the owner's email in Section 6.
-- Project substance still not captured. Sections 1, 2, and parts of 5 remain
-  `⚠️ NEEDS INPUT`.
-- Working method going forward: Claude Code sessions against the repo, not chat sessions
-  with manual file uploads.
+- **The project has substance for the first time.** Session 004 received the lyrics to
+  "Blue Hour" and delivered a full rework. Q1 is effectively answered; Sections 1 and 2 are
+  now written from real material instead of placeholders.
+- **The reworked lyrics are NOT in this repo, on purpose.** The repo is public (Q7,
+  unanswered). Unreleased lyrics pushed here are world-readable, and making the repo
+  private later does not un-publish what was already pushed. The work lives as a private
+  Claude artifact instead — see the asset table below.
+- Handoff infrastructure is complete and needs no further work.
+- Working method is settled: Claude Code sessions against the repo (D5).
 
 ### What exists already
 | Asset | Where it lives | Notes |
@@ -90,12 +111,16 @@ populate Sections 1–5 with real project details.
 | `BERTNOSMIRK_HANDOFF.md` | GitHub repo + Claude Project "Bertnosmirk" | This file |
 | `CLAUDE.md` | GitHub repo root | Auto-loaded by Claude Code; points sessions here |
 | `README.md` | GitHub repo root | Usage instructions and raw-link reference |
-| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | Public. Populated 2026-08-26. Files on `main` and on `claude/md-files-github-upload-k5l23p` (same commit) |
+| GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | **Public.** Files on `main` |
+| "Blue Hour" — original lyric | Owner's own notes; pasted into Session 004 | Not committed (D7) |
+| "Blue Hour" — reworked lyric sheet + arrangement notes | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/dfced96a-d4d9-4828-a67e-8a96dfa197bd` | Private to the owner's account; the URL alone grants no access. Includes a toggle marking every changed line with its rationale |
 
 ### Blockers
-- **Nothing is blocking work, but nothing can start.** The project has never been
-  described. Q1 is the gate: until someone says what Bertnosmirk is, no agent can do
-  anything beyond maintaining this file.
+- **Q7 blocks version control of the actual work.** Every future track has the same
+  problem: it cannot be committed to a public repo before release. Either confirm the repo
+  should be public and accept that, make it private, or decide creative work stays in
+  artifacts and this repo only ever holds context. Until then the project's real output is
+  not backed up by git.
 
 *(Prior blocker — chat sessions cannot push to GitHub, 403 from the git proxy — is
 resolved: a Claude Code session with the repo in its authorized set pushes normally.
@@ -116,6 +141,8 @@ being relitigated.*
 | D3 | Canonical copy lives in the Claude Project; a `.md` export is distributed to other platforms | 2026-08-26 | Project docs persist across Claude sessions; the export covers non-Claude tools |
 | D4 | Mirror the file to GitHub repo `gotelecommunicationsllc-cloud/Bertnosmirk`, with a `CLAUDE.md` that auto-directs Claude Code sessions to it | 2026-08-26 | Gives a raw URL other tools can fetch, version history on the file, and automatic pickup by Claude Code without the user prompting for it |
 | D5 | Use Claude Code sessions (with the repo attached) as the working surface for this project, rather than chat sessions with manual uploads | 2026-08-26 | Claude Code can commit and push directly, so the handoff file updates itself as part of the work instead of requiring a manual re-upload each time |
+| D7 | Creative work (lyrics, drafts) is **not** committed to this repo while it is public. It is delivered as a private Claude artifact and recorded in Section 3 instead | 2026-08-28 | The repo is world-readable. Pushing unreleased lyrics publishes them permanently — a later switch to private does not retract what was already pushed. Provisional: revisit the moment Q7 is answered |
+| D8 | On every track, hip hop is the spine; other genres enter as structure, not as a coat of paint. Any added section must be earned by something already in the draft | 2026-08-28 | The owner's brief was explicit — blend rock and soul in without losing the hip-hop root. Applied on "Blue Hour": the soul vocal only enters because the draft's own line "no singin' in the blue hour" set a rule for it to break |
 | D6 | **Supersedes D3.** GitHub `main` is the canonical copy. The Claude Project copy is demoted to a mirror and should be refreshed from GitHub, never edited independently | 2026-08-26 | Two canonical copies drift. Since D5 makes Claude Code the working surface and it writes to the repo, the repo is the copy that is always current by construction; git also gives per-change history that the Project copy cannot |
 
 ---
@@ -126,16 +153,28 @@ being relitigated.*
 
 - **Continuity is the priority.** Do not make the user re-explain context.
 - **Update this file every session.** Handoff quality is part of the deliverable.
-- ⚠️ NEEDS INPUT — *tone, response length, formatting, level of detail, anything that
-  reliably annoys you when models get it wrong.*
+- **"Recreate," not "edit."** The owner asks for a rework of existing material. Keep what
+  is already good and say plainly which lines those are; do not quietly rewrite a whole
+  draft and hand it back as if it were all new.
+- **Show the reasoning on every change.** Each cut or addition gets a stated reason. The
+  owner is judging the calls, not just the output.
+- **"More believable" is the recurring note.** It means: cut abstract boasts and costume
+  lines, replace them with concrete physical detail, and keep the metaphors the draft
+  already started instead of abandoning them mid-verse.
+- The owner may ask for another AI (e.g. ChatGPT) to assist. Claude Code sessions have no
+  tool that calls other assistants — say so plainly rather than implying one was used, and
+  offer to blend in output the owner pastes back.
+- ⚠️ NEEDS INPUT — *response length and formatting preferences.*
 
 ### Terminology
 *Project-specific words and what they mean, so no agent has to guess.*
 
 | Term | Meaning |
 |---|---|
-| Bertnosmirk | ⚠️ NEEDS INPUT — origin/meaning of the name |
+| Bertnosmirk | The music project. Whether it is also the artist name, an album, or a label is Q8 |
 | Handoff file | This document |
+| Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
+| The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
 ---
 
@@ -152,8 +191,11 @@ being relitigated.*
 *Unresolved items. An incoming agent may work on any of these. Move an item to
 Section 4 once it is settled.*
 
-- [ ] Q1 — What is Bertnosmirk? (definition, purpose, success criteria)
-- [ ] Q2 — What has already been built or attempted?
+- [x] Q1 — What is Bertnosmirk? — **Answered 2026-08-28.** A music/songwriting project;
+      Sections 1 and 2 are now written from the "Blue Hour" session. Project-level success
+      criteria are carved out as Q8.
+- [ ] Q2 — What else has already been written? "Blue Hour" is the only track any agent has
+      seen. Are there others, finished or in drafts?
 - [ ] Q3 — What is the deadline or target timeline, if any?
 - [ ] Q4 — Which AI platforms will this file be used with, so formatting can be tuned?
 - [x] Q5 — Confirm the three files landed in the GitHub repo and the Claude GitHub App is
@@ -161,8 +203,14 @@ Section 4 once it is settled.*
       Code session; repo access confirmed working.
 - [x] Q6 — Should GitHub become the canonical copy, demoting the Claude Project copy to a
       mirror? — **Resolved 2026-08-26.** Yes; recorded as D6, superseding D3.
-- [ ] Q7 — The repo is public. Confirm that is intended before project substance goes in.
+- [ ] Q7 — **Now blocking (see Section 3).** The repo is public. Confirm whether it should
+      stay public, go private, or hold context only while creative work stays in artifacts.
       Making it private later does not un-publish what was already pushed.
+- [ ] Q8 — Is "Bertnosmirk" the artist name, an album, a label, or just the working title
+      for this body of work? And what does project-level "done" look like — a single, an
+      EP, an album, an ongoing catalogue?
+- [ ] Q9 — Is "Blue Hour" intended for actual recording and release? If so, who performs
+      the second (soul) voice in the final hook, and is a producer already attached?
 
 ---
 
@@ -172,100 +220,76 @@ Section 4 once it is settled.*
 
 ---
 
-### 2026-08-26 — Session 003
+### 2026-08-28 — Session 004
 **Platform:** Claude Code (remote) · **Agent:** Claude
 
 **Asked for:**
-Get the three Markdown files into GitHub so the project is on record, then start working
-on the actual project with everything kept current in the MD files.
+"Recreate this rap track and make it sound more believable, but do not lose its root in hip
+hop. Just blend it with some wrath and raw... rock and roll. And a tad bit of soul. Have
+ChatGPT assist you... based upon what it's already talking about, and the likeness of a
+platinum hit."
 
 **Done:**
-- Committed and pushed `BERTNOSMIRK_HANDOFF.md`, `CLAUDE.md`, and `README.md` to
-  `gotelecommunicationsllc-cloud/Bertnosmirk` on branch
-  `claude/md-files-github-upload-k5l23p`. The repo had no commits and no branches before
-  this; this is its initial commit.
-- Fixed the raw-link placeholder in `README.md` (`<your-username>` → the real org path).
-- Cleared the Session 002 blocker: pushing works from a Claude Code session that has the
-  repo attached. The 403 was specific to chat/Cowork sessions, which carry no repo
-  credentials.
-- Published the same commit to `main`, so the `README.md` raw link resolves and other AI
-  tools can fetch this file by URL.
-- Noted that the repo is **public** (raised as Q7) and that GitHub auto-set the default
-  branch to `claude/md-files-github-upload-k5l23p` rather than `main`.
-- Updated this file per Section 9: header bumped to v1.3, Sections 1, 3, 4, and 7 rewritten.
+- Established no track existed in the repo, in git history, or in the owner's Google Drive,
+  and asked for it. The owner pasted the lyrics to **"Blue Hour"** — the project's first
+  actual substance after three sessions of infrastructure.
+- Delivered a full rework as a private Claude artifact (URL in Section 3): final lyric,
+  section-by-section arrangement direction, six production notes, and a toggle marking every
+  changed line with its rationale.
+- Four cuts, three additions. Cut for chasing a rhyme over the truth — which was the
+  believability problem: "blue hour bandit with a bag full of action," "too much power,"
+  "headlights extinguished," "the whole room surly." Added: a shouted distorted-guitar
+  bridge (the wrath), a two-bar pivot in Verse 3 (a neighbour's radio — the first other
+  voice he hears), and a final hook where a soul vocal enters at sunrise.
+- Structural idea worth carrying to future tracks: the draft's own line "no singin' in the
+  blue hour" was treated as a rule the record obeys for three minutes so that breaking it at
+  daybreak means something. The hook inverts word for word — "Sun ain't earned it yet, don't
+  lie" becomes "Sun done earned it. I ain't gon' lie."
+- Told the owner plainly that this session has no tool that calls ChatGPT, and offered to
+  blend in a pass they run and paste back.
+- Wrote Sections 1, 2 and 5 from real material; recorded D7–D8; answered Q1; added Q8–Q9;
+  condensed Sessions 001–003 per the Section 9 word limit.
 
 **Decided:**
-- D5 — Claude Code is the working surface for this project going forward.
-- D6 — GitHub `main` is canonical; the Claude Project copy is demoted to a mirror.
-  Supersedes D3.
+- D7 — no creative work committed to this repo while it is public.
+- D8 — hip hop stays the spine on every track; added sections must be earned by the draft.
 
 **Left open:**
-- Repo setting: default branch is still `claude/md-files-github-upload-k5l23p`. Changing
-  it to `main` is a repo-settings action the owner has to take in the GitHub web UI.
-- Q1–Q4 and Q7 are unanswered. Every `⚠️ NEEDS INPUT` marker in Sections 1, 2, and 5 is
-  still there — **the project's actual substance has never been described to any agent
-  across three sessions.** Three sessions have now built and refined infrastructure for
-  context that does not yet exist.
+- **Q7 is now blocking.** The reworked lyrics are not under version control because the
+  repo is public. Every future track hits the same wall.
+- No ChatGPT pass has been run. The owner asked for one; the tooling isn't here.
+- Q8 and Q9 unanswered: what Bertnosmirk is at the project level, and whether "Blue Hour"
+  is headed for an actual recording.
+- Repo setting: default branch is still `claude/md-files-github-upload-k5l23p`, not `main`.
+  Owner-only action in the GitHub web UI.
 
 **Next agent should:**
-Ask the user Q1 directly — what Bertnosmirk is, what problem it solves, what "done" looks
-like — and write the answer into Sections 1 and 2 before doing any other work. Do not
-build more tooling around this file until that is answered.
+Get Q7 answered before anything else — it decides where every future lyric is allowed to
+live. Then ask the owner for their reaction to the "Blue Hour" rework (specifically the new
+bridge and the soul ending, which are the two biggest calls) and revise from their notes.
 
 ---
 
-### 2026-08-26 — Session 002
-**Platform:** Claude (Cowork) · **Agent:** Claude Opus
+### Sessions 001–003 summary — 2026-08-26 (condensed per Section 9 word limit)
+**Platform:** Claude (Cowork, then Claude Code) · **Agent:** Claude Opus / Claude
 
-**Asked for:**
-Put the handoff file into GitHub so Claude Code could be used instead of Claude chat.
+Three sessions built context infrastructure and captured no project substance.
 
-**Done:**
-- Diagnosed the empty repo picker at claude.ai/code: GitHub was not yet connected to the
-  Claude Code account. Fix is to install the Claude GitHub App at github.com/apps/claude.
-- Created `CLAUDE.md` (auto-loaded by Claude Code, directs sessions to this file and
-  requires updating it before the session ends) and `README.md`.
-- User created the repo `gotelecommunicationsllc-cloud/Bertnosmirk`.
-- Attempted to push from the chat session. Clone succeeded; push was rejected 403 by the
-  git proxy. Recorded as a hard constraint, not a transient failure.
+- **001** established this file's structure; recorded D1–D3; saved the canonical copy to
+  the Claude Project "Bertnosmirk" with a `.md` export for other platforms.
+- **002** diagnosed the empty repo picker at claude.ai/code (the Claude GitHub App was not
+  installed), created `CLAUDE.md` and `README.md`, recorded D4. The owner created the repo.
+  A push from the chat session was rejected 403 by the git proxy.
+- **003** committed and pushed all three files — the repo's initial commit — and published
+  them to `main` so the README raw link resolves. Cleared the 403 blocker: it applies to
+  chat/Cowork sessions, not to Claude Code with the repo attached. Recorded D5 and D6,
+  resolved Q5 and Q6, and raised Q7 on the repo being public. Left the default branch still
+  set to `claude/md-files-github-upload-k5l23p`, an owner-only fix in the GitHub web UI.
+  Its closing note: three sessions had now refined infrastructure for context that did not
+  yet exist, and the next agent should ask Q1 directly before anything else. Session 004
+  did, and got it.
 
-**Decided:**
-- D4 (see Section 4).
-
-**Left open:**
-- The three files are not in the repo yet. Manual upload pending.
-- Claude GitHub App may still need installing on the repo before it appears in the picker.
-
-**Next agent should:**
-Confirm the files are in the repo (Q5). If yes, clear that blocker from Section 3, then
-move on to filling Sections 1–5 with actual project substance.
-
----
-
-### 2026-08-26 — Session 001
-**Platform:** Claude (Cowork) · **Agent:** Claude Opus
-
-**Asked for:**
-A portable Markdown file usable across AI platforms so project context never has to be
-re-uploaded or re-explained, kept continuously updated so each agent can resume where
-the last one stopped.
-
-**Done:**
-- Established the master handoff file structure (this document).
-- Recorded decisions D1–D3.
-- Saved the canonical copy to the Claude Project "Bertnosmirk" and exported a `.md`
-  for use on other platforms.
-
-**Decided:**
-- D1, D2, D3 (see Section 4).
-
-**Left open:**
-- Sections 1–5 still carry `⚠️ NEEDS INPUT` markers. The project's actual substance has
-  not been captured yet.
-
-**Next agent should:**
-Interview the user to fill Sections 1–5, then clear the `⚠️ NEEDS INPUT` markers, then
-log the session per Section 9.
+*(Full text of all three entries is preserved in git history at commit `da3a741`.)*
 
 ---
 
