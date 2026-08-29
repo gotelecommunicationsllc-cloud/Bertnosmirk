@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.6 |
+| **File version** | v1.7 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -42,8 +42,8 @@ recorded.** The owner writes lyrics and briefs an AI to rework them: tighten the
 fix lines that reach for a rhyme instead of the truth, and build the arrangement out into
 the shape of a commercial single. The first track worked on is **"Blue Hour"** (Session
 004): a 4 a.m. insomnia record. The second is **"Tailgate"** — a grown-and-sexy funk
-anthem for the owner's DJ persona, **DJ Steve-O**: Philly-born union dock worker, Eagles
-fan, now in Long Beach. It doubles as the house record for **Tailgate, a real bar in Long
+anthem for the owner's DJ persona, **DJ Steve-O**: raised in Philadelphia, works the docks
+in the Long Beach area, Eagles fan. It doubles as the house record for **Tailgate, a real bar in Long
 Beach, CA** where Steve-O DJs — the song title, the hook and the venue name are the same
 word. What "done" looks like at the track level is a finished lyric,
 arrangement notes a producer can cut from, and paste-ready prompts for a text-to-music
@@ -186,7 +186,7 @@ being relitigated.*
 | Bertnosmirk | The music project. Whether it is also the artist name, an album, or a label is Q8 |
 | Handoff file | This document |
 | Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
-| DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." Philly born, union dock worker, Eagles fan, now in Long Beach. Signature phrases: "you already know" and "all love, no hate" |
+| DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." **Raised in Philadelphia; a union dock worker in the Long Beach / SoCal area** — the docks are the California half of his life, not the Philly half. Eagles fan. Signature phrases: "you already know" and "all love, no hate" |
 | Tailgate | **Both** the second track (Session 004) and the real Long Beach, CA bar it is written for. Round bar, pool tables, Steve-O in the booth. The song's hook chants the venue name |
 | The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
@@ -295,6 +295,12 @@ platinum hit."
   name, the final hook gained a "(Long Beach!)" crowd response, and the earlier promo drops
   were finished and folded into the same artifact so the song and the spots read as one
   campaign.
+- **Corrected the story mid-session at the owner's direction.** The first draft had him
+  working the docks in Philadelphia and carrying the trade west. Wrong: Philadelphia is
+  where he was raised, and the dock job is Long Beach. Verse 1 was rewritten so Philly is
+  the row house, the front step, the radio and the Eagles, and Long Beach is the union card,
+  the hard hat and the cranes — with the move landing at the halfway mark of the verse. The
+  outro now carries the summary line, "port in the mornin', booth at night."
 - Also answered an unrelated personal question about lightweight locking agents for
   dreadlocks. Noted here only so a future agent knows this session covered non-project
   ground and does not go looking for a missing deliverable.
