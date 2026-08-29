@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.7 |
+| **File version** | v1.8 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -43,9 +43,9 @@ fix lines that reach for a rhyme instead of the truth, and build the arrangement
 the shape of a commercial single. The first track worked on is **"Blue Hour"** (Session
 004): a 4 a.m. insomnia record. The second is **"Tailgate"** — a grown-and-sexy funk
 anthem for the owner's DJ persona, **DJ Steve-O**: raised in Philadelphia, works the docks
-in the Long Beach area, Eagles fan. It doubles as the house record for **Tailgate, a real bar in Long
-Beach, CA** where Steve-O DJs — the song title, the hook and the venue name are the same
-word. What "done" looks like at the track level is a finished lyric,
+in the Long Beach area, Eagles fan. It doubles as the house record for **his Sunday DJ
+residency at Tailgate, a real bar in Long Beach, CA** — the song title, the hook and the
+venue name are the same word. What "done" looks like at the track level is a finished lyric,
 arrangement notes a producer can cut from, and paste-ready prompts for a text-to-music
 tool. What "done" looks like for the project overall is still open (see Q8).
 
@@ -187,7 +187,7 @@ being relitigated.*
 | Handoff file | This document |
 | Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
 | DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." **Raised in Philadelphia; a union dock worker in the Long Beach / SoCal area** — the docks are the California half of his life, not the Philly half. Eagles fan. Signature phrases: "you already know" and "all love, no hate" |
-| Tailgate | **Both** the second track (Session 004) and the real Long Beach, CA bar it is written for. Round bar, pool tables, Steve-O in the booth. The song's hook chants the venue name |
+| Tailgate | **Both** the second track (Session 004) and the real Long Beach, CA bar it is written for. Round bar, pool tables. **The owner DJs there every Sunday; he does not own the bar** — so all copy is written around his residency, never as a claim about the business. The song's hook chants the venue name |
 | The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
 ---
@@ -227,11 +227,16 @@ Section 4 once it is settled.*
       the second (soul) voice in "Blue Hour," and is a producer attached to either track?
 - [x] Q10 — Is "Tailgate" tied to a real venue? — **Answered 2026-08-28.** Yes: a bar named
       **Tailgate in Long Beach, CA**. The song is its house record.
-- [ ] Q12 — Still unknown about the bar: the nights Steve-O spins, street address, age
-      policy, and any specials. Deliberately left out of the lyrics and the drops rather
-      than invented. Needed before anything is used as actual promotion.
-- [ ] Q13 — Does the owner own Tailgate, or DJ there? If he does not own it, the venue's
-      owner may want a say before a song naming the bar is released or used to promote it.
+- [x] Q13 — Does the owner own Tailgate, or DJ there? — **Answered 2026-08-28.** He is the
+      resident DJ every Sunday; he does not own it. All lyrics and promo copy are therefore
+      written around the residency ("every Sunday, same booth"), never as claims about the
+      venue itself.
+- [ ] Q12 — Still unknown about the bar: street address, set times, age policy, specials or
+      game-day deals. Deliberately left out of the lyrics and the drops rather than
+      invented. Needed before anything is used as actual promotion.
+- [ ] Q14 — Since the owner does not own the bar, does the venue know about the song? Not a
+      blocker for writing it, but worth confirming before it is used to promote their
+      Sunday night.
 - [ ] Q11 — The owner has asked three times for ChatGPT collaboration. Claude Code has no
       tool that calls it. Session 004 delivered a paste-ready ChatGPT brief as the
       workaround. Confirm whether that satisfies the ask or whether a different setup is
@@ -301,6 +306,18 @@ platinum hit."
   the row house, the front step, the radio and the Eagles, and Long Beach is the union card,
   the hard hat and the cranes — with the move landing at the halfway mark of the verse. The
   outro now carries the summary line, "port in the mornin', booth at night."
+- **Delivered a complete Suno prompt**, broken out by the fields Suno actually asks for:
+  title, a 197-character style string that fits any version, a 1,155-character extended
+  style string, an exclude-styles list, and the full tagged lyrics. Plus six practical notes
+  on running it — chief among them to generate from Verse 1 and record the spoken intro and
+  outro himself, since those are the most personal writing in the song and the tool tends to
+  sing or rush long spoken passages.
+- **Learned he DJs at Tailgate every Sunday and does not own it.** Wrote the residency into
+  Verse 2 rather than any claim about the business, and rebuilt the drops to lead with
+  Sundays. His own pitch went in verbatim: "good drinks, great music, grown fun." His line
+  "grab your buddies, pile up, come on down" became "grab your people, pile up — take one
+  car," which is an invitation and a designated-driver line at once, one bar before the
+  chorus that ends on "everybody get home safe."
 - Also answered an unrelated personal question about lightweight locking agents for
   dreadlocks. Noted here only so a future agent knows this session covered non-project
   ground and does not go looking for a missing deliverable.
