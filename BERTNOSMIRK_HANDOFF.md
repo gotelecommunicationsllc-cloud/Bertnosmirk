@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.5 |
+| **File version** | v1.6 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -43,7 +43,9 @@ fix lines that reach for a rhyme instead of the truth, and build the arrangement
 the shape of a commercial single. The first track worked on is **"Blue Hour"** (Session
 004): a 4 a.m. insomnia record. The second is **"Tailgate"** — a grown-and-sexy funk
 anthem for the owner's DJ persona, **DJ Steve-O**: Philly-born union dock worker, Eagles
-fan, living in California. What "done" looks like at the track level is a finished lyric,
+fan, now in Long Beach. It doubles as the house record for **Tailgate, a real bar in Long
+Beach, CA** where Steve-O DJs — the song title, the hook and the venue name are the same
+word. What "done" looks like at the track level is a finished lyric,
 arrangement notes a producer can cut from, and paste-ready prompts for a text-to-music
 tool. What "done" looks like for the project overall is still open (see Q8).
 
@@ -123,7 +125,7 @@ success — an album, a release, a catalogue, something else — is Q8.
 | GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | **Public.** Files on `main` |
 | "Blue Hour" — original lyric | Owner's own notes; pasted into Session 004 | Not committed (D7) |
 | "Blue Hour" — reworked lyric sheet + arrangement notes | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/dfced96a-d4d9-4828-a67e-8a96dfa197bd` | Private to the owner's account; the URL alone grants no access. Includes a toggle marking every changed line with its rationale |
-| "Tailgate" — full lyric, arrangement notes, generation prompts, ChatGPT brief | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/8c1153ce-1a44-415f-b419-d64225c76ca2` | Written from the owner's structured brief, not a rework. Copy buttons on all four prompt blocks |
+| "Tailgate" — full lyric, arrangement notes, generation prompts, station drops, ChatGPT brief | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/8c1153ce-1a44-415f-b419-d64225c76ca2` | Written from the owner's structured brief, not a rework. Copy buttons on all seven paste blocks |
 
 ### Blockers
 - **Q7 blocks version control of the actual work.** Every future track has the same
@@ -184,8 +186,8 @@ being relitigated.*
 | Bertnosmirk | The music project. Whether it is also the artist name, an album, or a label is Q8 |
 | Handoff file | This document |
 | Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
-| DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." Philly born, union dock worker, Eagles fan, now in California. Signature phrases: "you already know" and "all love, no hate" |
-| Tailgate | Second track (Session 004). Grown-and-sexy funk tailgate anthem. Hook is call-and-response on the rhyme *tailgate / all love, no hate* |
+| DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." Philly born, union dock worker, Eagles fan, now in Long Beach. Signature phrases: "you already know" and "all love, no hate" |
+| Tailgate | **Both** the second track (Session 004) and the real Long Beach, CA bar it is written for. Round bar, pool tables, Steve-O in the booth. The song's hook chants the venue name |
 | The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
 ---
@@ -223,9 +225,13 @@ Section 4 once it is settled.*
       EP, an album, an ongoing catalogue?
 - [ ] Q9 — Are these tracks intended for actual recording and release? If so, who performs
       the second (soul) voice in "Blue Hour," and is a producer attached to either track?
-- [ ] Q10 — Is "Tailgate" tied to a real venue? The environment brief (round bar, pool
-      table, Steve-O DJing) reads like a specific spot. If it is real, its name, city and
-      nights would sharpen the writing and could support a promo drop alongside the song.
+- [x] Q10 — Is "Tailgate" tied to a real venue? — **Answered 2026-08-28.** Yes: a bar named
+      **Tailgate in Long Beach, CA**. The song is its house record.
+- [ ] Q12 — Still unknown about the bar: the nights Steve-O spins, street address, age
+      policy, and any specials. Deliberately left out of the lyrics and the drops rather
+      than invented. Needed before anything is used as actual promotion.
+- [ ] Q13 — Does the owner own Tailgate, or DJ there? If he does not own it, the venue's
+      owner may want a say before a song naming the bar is released or used to promote it.
 - [ ] Q11 — The owner has asked three times for ChatGPT collaboration. Claude Code has no
       tool that calls it. Session 004 delivered a paste-ready ChatGPT brief as the
       workaround. Confirm whether that satisfies the ask or whether a different setup is
@@ -282,6 +288,13 @@ platinum hit."
 - Answered the owner's mid-session additions: a spoken intro set in the driveway before
   loading up (music, family, friends, Eagles), an outro written to bookend it in the same
   driveway at day's end, and ride-along energy (94 BPM, a convoy line in the pre-hook).
+- **Late in the session the venue turned out to be real**: a bar called Tailgate in Long
+  Beach, CA. Revised the song to use it. Verse 1 went to twelve bars so the story could run
+  port to port — a Philly dock worker moving to the city built on the Port of Long Beach,
+  landing on "port in the mornin', and the booth at night." Verse 2 now reveals the bar by
+  name, the final hook gained a "(Long Beach!)" crowd response, and the earlier promo drops
+  were finished and folded into the same artifact so the song and the spots read as one
+  campaign.
 - Also answered an unrelated personal question about lightweight locking agents for
   dreadlocks. Noted here only so a future agent knows this session covered non-project
   ground and does not go looking for a missing deliverable.
@@ -297,6 +310,8 @@ platinum hit."
   tool that calls it; Session 004 delivered a paste-ready ChatGPT brief instead, written to
   request targeted alternates rather than a full rewrite. Raised as Q11.
 - "Tailgate" is a first draft — the owner has not reacted to it yet.
+- The bar's operating details (nights, address, age policy, specials) are unknown and were
+  left blank on purpose rather than invented. Raised as Q12; ownership as Q13.
 - Q8 and Q9 unanswered: what Bertnosmirk is at the project level, and whether "Blue Hour"
   is headed for an actual recording.
 - Repo setting: default branch is still `claude/md-files-github-upload-k5l23p`, not `main`.
