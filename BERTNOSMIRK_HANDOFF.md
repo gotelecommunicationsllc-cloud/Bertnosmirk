@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v2.0 |
+| **File version** | v2.1 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -331,6 +331,13 @@ platinum hit."
   same couplet, placed in three solo bars where the crowd chant drops out and he is the only
   voice. That stretch now carries name, night, food, drinks and his own phrase, inside the
   part of the song people repeat. Drops updated to the same tagline.
+- **"Tailgate" is complete.** Final addition was the owner's own material for Verse 2 — wall
+  to wall TVs, packed up to the bar, and the best couplet in the record, which is his:
+  "People dancin', jammin' to they favorite tune / Smellin' like expensive cologne and the
+  sweetest perfume." Verse 2 went to fourteen bars to hold it. Worth noting as a pattern:
+  across this session the owner's own fragments consistently outperformed anything written
+  for him — "all love, no hate," "tailgate," "pile up," and this couplet are the spine of
+  the song. **Mine the voice memos before writing new lines.**
 - Also answered an unrelated personal question about lightweight locking agents for
   dreadlocks. Noted here only so a future agent knows this session covered non-project
   ground and does not go looking for a missing deliverable.
