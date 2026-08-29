@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.4 |
+| **File version** | v1.5 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -41,10 +41,11 @@ You are picking up an in-progress project. Before you do anything else:
 recorded.** The owner writes lyrics and briefs an AI to rework them: tighten the writing,
 fix lines that reach for a rhyme instead of the truth, and build the arrangement out into
 the shape of a commercial single. The first track worked on is **"Blue Hour"** (Session
-004): a 4 a.m. insomnia record, spoken delivery throughout, trap kick under a rock snare,
-tenor sax, and a soul vocal that only enters at sunrise. What "done" looks like at the
-track level is a finished lyric plus arrangement notes a producer can cut from. What
-"done" looks like for the project overall is still open (see Q8).
+004): a 4 a.m. insomnia record. The second is **"Tailgate"** — a grown-and-sexy funk
+anthem for the owner's DJ persona, **DJ Steve-O**: Philly-born union dock worker, Eagles
+fan, living in California. What "done" looks like at the track level is a finished lyric,
+arrangement notes a producer can cut from, and paste-ready prompts for a text-to-music
+tool. What "done" looks like for the project overall is still open (see Q8).
 
 **Current status in one line:** The project finally has substance — one track reworked and
 delivered — but the creative work is deliberately being kept OUT of this public repo until
@@ -63,7 +64,15 @@ A songwriting project. The owner brings original lyrics; the AI's job is to **re
 them — keep the hip-hop spine and the images that already work, cut the lines that were
 written to satisfy a rhyme, and add whatever structure the song needs to function as a
 single rather than a mood. Deliverable per track: final lyric, section-by-section
-arrangement direction, and a written account of every change and why it was made.
+arrangement direction, and a written account of every change and why it was made. On
+briefed-from-scratch tracks ("Tailgate"), add paste-ready generation prompts for a
+text-to-music tool.
+
+The owner works by **voice memo**. Transcripts arrive garbled and full of filler — decoding
+them is part of the job, not a problem with them. On "Tailgate," the transcription
+"Tell gate" was **tailgate**, and recovering that word produced the song's entire hook.
+Read every unclear fragment as possibly load-bearing, and say back what you think you heard
+so it can be corrected.
 
 ### Why it exists / the problem it solves
 Raw drafts have strong images but carry filler lines that undercut believability, and they
@@ -114,6 +123,7 @@ success — an album, a release, a catalogue, something else — is Q8.
 | GitHub repo | `gotelecommunicationsllc-cloud/Bertnosmirk` | **Public.** Files on `main` |
 | "Blue Hour" — original lyric | Owner's own notes; pasted into Session 004 | Not committed (D7) |
 | "Blue Hour" — reworked lyric sheet + arrangement notes | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/dfced96a-d4d9-4828-a67e-8a96dfa197bd` | Private to the owner's account; the URL alone grants no access. Includes a toggle marking every changed line with its rationale |
+| "Tailgate" — full lyric, arrangement notes, generation prompts, ChatGPT brief | Private Claude artifact, published Session 004: `https://claude.ai/code/artifact/8c1153ce-1a44-415f-b419-d64225c76ca2` | Written from the owner's structured brief, not a rework. Copy buttons on all four prompt blocks |
 
 ### Blockers
 - **Q7 blocks version control of the actual work.** Every future track has the same
@@ -174,6 +184,8 @@ being relitigated.*
 | Bertnosmirk | The music project. Whether it is also the artist name, an album, or a label is Q8 |
 | Handoff file | This document |
 | Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
+| DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." Philly born, union dock worker, Eagles fan, now in California. Signature phrases: "you already know" and "all love, no hate" |
+| Tailgate | Second track (Session 004). Grown-and-sexy funk tailgate anthem. Hook is call-and-response on the rhyme *tailgate / all love, no hate* |
 | The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
 ---
@@ -209,8 +221,15 @@ Section 4 once it is settled.*
 - [ ] Q8 — Is "Bertnosmirk" the artist name, an album, a label, or just the working title
       for this body of work? And what does project-level "done" look like — a single, an
       EP, an album, an ongoing catalogue?
-- [ ] Q9 — Is "Blue Hour" intended for actual recording and release? If so, who performs
-      the second (soul) voice in the final hook, and is a producer already attached?
+- [ ] Q9 — Are these tracks intended for actual recording and release? If so, who performs
+      the second (soul) voice in "Blue Hour," and is a producer attached to either track?
+- [ ] Q10 — Is "Tailgate" tied to a real venue? The environment brief (round bar, pool
+      table, Steve-O DJing) reads like a specific spot. If it is real, its name, city and
+      nights would sharpen the writing and could support a promo drop alongside the song.
+- [ ] Q11 — The owner has asked three times for ChatGPT collaboration. Claude Code has no
+      tool that calls it. Session 004 delivered a paste-ready ChatGPT brief as the
+      workaround. Confirm whether that satisfies the ask or whether a different setup is
+      wanted.
 
 ---
 
@@ -249,6 +268,23 @@ platinum hit."
   blend in a pass they run and paste back.
 - Wrote Sections 1, 2 and 5 from real material; recorded D7–D8; answered Q1; added Q8–Q9;
   condensed Sessions 001–003 per the Section 9 word limit.
+- **Second track, "Tailgate."** The owner sent a voice memo and then a structured brief
+  (story, environment, mood, instruments, rhythm, voice, hook requirements). Delivered a
+  complete original song plus arrangement notes, a line-by-line map of the brief to where
+  each item lives in the record, paste-ready Suno/Udio prompts, and a ChatGPT brief.
+- The unlock was decoding the voice memo: transcribed "Tell gate" was **tailgate**, which
+  rhymes with the owner's own phrase "all love, no hate." Those two fragments, sent in
+  separate messages, became the hook.
+- Hardest brief item was "responsible fun times, safety" without turning a party record
+  into a public service announcement. Solution: safety is written as care, never warning —
+  it closes every chorus, sits inside the bridge's most intimate passage, and becomes the
+  outro's whole point.
+- Answered the owner's mid-session additions: a spoken intro set in the driveway before
+  loading up (music, family, friends, Eagles), an outro written to bookend it in the same
+  driveway at day's end, and ride-along energy (94 BPM, a convoy line in the pre-hook).
+- Also answered an unrelated personal question about lightweight locking agents for
+  dreadlocks. Noted here only so a future agent knows this session covered non-project
+  ground and does not go looking for a missing deliverable.
 
 **Decided:**
 - D7 — no creative work committed to this repo while it is public.
@@ -257,7 +293,10 @@ platinum hit."
 **Left open:**
 - **Q7 is now blocking.** The reworked lyrics are not under version control because the
   repo is public. Every future track hits the same wall.
-- No ChatGPT pass has been run. The owner asked for one; the tooling isn't here.
+- No ChatGPT pass has been run. The owner has now asked three times. Claude Code has no
+  tool that calls it; Session 004 delivered a paste-ready ChatGPT brief instead, written to
+  request targeted alternates rather than a full rewrite. Raised as Q11.
+- "Tailgate" is a first draft — the owner has not reacted to it yet.
 - Q8 and Q9 unanswered: what Bertnosmirk is at the project level, and whether "Blue Hour"
   is headed for an actual recording.
 - Repo setting: default branch is still `claude/md-files-github-upload-k5l23p`, not `main`.
@@ -265,8 +304,9 @@ platinum hit."
 
 **Next agent should:**
 Get Q7 answered before anything else — it decides where every future lyric is allowed to
-live. Then ask the owner for their reaction to the "Blue Hour" rework (specifically the new
-bridge and the soul ending, which are the two biggest calls) and revise from their notes.
+live. Then get the owner's reaction to both tracks and revise from their notes: on "Blue
+Hour" the new bridge and the soul ending are the two biggest calls; on "Tailgate" it is the
+spoken intro and whether the bridge earns its place.
 
 ---
 
