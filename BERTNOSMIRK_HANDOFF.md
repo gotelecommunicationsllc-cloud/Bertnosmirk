@@ -6,7 +6,7 @@
 
 | Field | Value |
 |---|---|
-| **File version** | v1.8 |
+| **File version** | v1.9 |
 | **Last updated** | 2026-08-28 |
 | **Updated by** | Claude (Claude Code session) |
 | **Owner** | HIM — himkimmitchell@gmail.com |
@@ -187,6 +187,7 @@ being relitigated.*
 | Handoff file | This document |
 | Blue Hour | First track worked on (Session 004). The ~4 a.m. window before sunrise; also the song's central rule — "no singin' in the blue hour" — which the record obeys until the sun comes up |
 | DJ Steve-O | The owner's DJ / artist persona and the character voice on "Tailgate." **Raised in Philadelphia; a union dock worker in the Long Beach / SoCal area** — the docks are the California half of his life, not the Philly half. Eagles fan. Signature phrases: "you already know" and "all love, no hate" |
+| The hook | "Tailgate, tailgate — come on down / grown and sexy sound / put your feet on the ground / come and enjoy the crowd." The crowd chants the doubled venue name; the DJ answers with the invitation. Locked at the owner's direction — do not restructure it without being asked |
 | Tailgate | **Both** the second track (Session 004) and the real Long Beach, CA bar it is written for. Round bar, pool tables. **The owner DJs there every Sunday; he does not own the bar** — so all copy is written around his residency, never as a claim about the business. The song's hook chants the venue name |
 | The rework | Standard deliverable for a track: final lyric + arrangement direction + a line-by-line account of what changed and why |
 
@@ -318,6 +319,13 @@ platinum hit."
   "grab your buddies, pile up, come on down" became "grab your people, pile up — take one
   car," which is an invitation and a designated-driver line at once, one bar before the
   chorus that ends on "everybody get home safe."
+- **Hook rewritten at the owner's direction, second pass.** The first version was one word
+  with four rotating answers covering his topic list. He asked instead for the venue name
+  doubled and the hook turned into an invitation: come on down, grown and sexy music, enjoy
+  the crowd. Final form flips the usual roles — the room chants "Tailgate, tailgate" and the
+  DJ answers — with all four answers landing on one rhyme sound (down / sound / ground /
+  crowd) so it locks in after a single pass, and the crowd chants the bar's name eight times
+  a chorus.
 - Also answered an unrelated personal question about lightweight locking agents for
   dreadlocks. Noted here only so a future agent knows this session covered non-project
   ground and does not go looking for a missing deliverable.
